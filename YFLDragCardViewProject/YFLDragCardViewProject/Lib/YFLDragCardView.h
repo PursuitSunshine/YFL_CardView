@@ -11,6 +11,9 @@
 @interface YFLDragCardView : UIView
 
 
+@property (nonatomic,assign) CGAffineTransform originTransForm;
+
+
 /**
  布局子视图，其子类重写，并在其进行布局
  */

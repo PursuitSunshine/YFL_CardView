@@ -7,76 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F71F1EE2150ABED004ED169 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F1ED2150ABED004ED169 /* AppDelegate.m */; };
-		1F71F1F62150ABF1004ED169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F71F1F52150ABF1004ED169 /* Assets.xcassets */; };
-		1F71F1F92150ABF1004ED169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F71F1F72150ABF1004ED169 /* LaunchScreen.storyboard */; };
-		1F71F1FC2150ABF1004ED169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F1FB2150ABF1004ED169 /* main.m */; };
-		1F71F2062150ABF1004ED169 /* YFLDragCardViewProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F2052150ABF1004ED169 /* YFLDragCardViewProjectTests.m */; };
-		1F71F2112150ABF1004ED169 /* YFLDragCardViewProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F2102150ABF1004ED169 /* YFLDragCardViewProjectUITests.m */; };
-		1F71F2202150AC08004ED169 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F21F2150AC08004ED169 /* MainViewController.m */; };
-		1F71F2262150AD2E004ED169 /* YFLDragCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F2252150AD2E004ED169 /* YFLDragCardContainer.m */; };
-		1F71F2292150AD45004ED169 /* YFLDragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F2282150AD45004ED169 /* YFLDragCardView.m */; };
-		1F71F22F2150E9D5004ED169 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71F22E2150E9D5004ED169 /* CardView.m */; };
+		1F92739D21512C3B002C8E93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F92739C21512C3B002C8E93 /* AppDelegate.m */; };
+		1F9273A521512C3B002C8E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9273A421512C3B002C8E93 /* Assets.xcassets */; };
+		1F9273A821512C3B002C8E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9273A621512C3B002C8E93 /* LaunchScreen.storyboard */; };
+		1F9273AB21512C3C002C8E93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273AA21512C3C002C8E93 /* main.m */; };
+		1F9273B521512C3C002C8E93 /* YFLDragCardViewProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273B421512C3C002C8E93 /* YFLDragCardViewProjectTests.m */; };
+		1F9273C021512C3C002C8E93 /* YFLDragCardViewProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273BF21512C3C002C8E93 /* YFLDragCardViewProjectUITests.m */; };
+		1F9273D121512C57002C8E93 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273CE21512C56002C8E93 /* CardView.m */; };
+		1F9273D221512C57002C8E93 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D021512C57002C8E93 /* MainViewController.m */; };
+		1F9273D921512C7A002C8E93 /* YFLDragCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D721512C7A002C8E93 /* YFLDragCardContainer.m */; };
+		1F9273DA21512C7A002C8E93 /* YFLDragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D821512C7A002C8E93 /* YFLDragCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1F71F2022150ABF1004ED169 /* PBXContainerItemProxy */ = {
+		1F9273B121512C3C002C8E93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1F71F1E12150ABED004ED169 /* Project object */;
+			containerPortal = 1F92739021512C3B002C8E93 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F71F1E82150ABED004ED169;
+			remoteGlobalIDString = 1F92739721512C3B002C8E93;
 			remoteInfo = YFLDragCardViewProject;
 		};
-		1F71F20D2150ABF1004ED169 /* PBXContainerItemProxy */ = {
+		1F9273BC21512C3C002C8E93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1F71F1E12150ABED004ED169 /* Project object */;
+			containerPortal = 1F92739021512C3B002C8E93 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F71F1E82150ABED004ED169;
+			remoteGlobalIDString = 1F92739721512C3B002C8E93;
 			remoteInfo = YFLDragCardViewProject;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F71F1E92150ABED004ED169 /* YFLDragCardViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLDragCardViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F71F1EC2150ABED004ED169 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1F71F1ED2150ABED004ED169 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F71F1F52150ABF1004ED169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F71F1F82150ABF1004ED169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1F71F1FA2150ABF1004ED169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F71F1FB2150ABF1004ED169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F71F2012150ABF1004ED169 /* YFLDragCardViewProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLDragCardViewProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F71F2052150ABF1004ED169 /* YFLDragCardViewProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardViewProjectTests.m; sourceTree = "<group>"; };
-		1F71F2072150ABF1004ED169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F71F20C2150ABF1004ED169 /* YFLDragCardViewProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLDragCardViewProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F71F2102150ABF1004ED169 /* YFLDragCardViewProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardViewProjectUITests.m; sourceTree = "<group>"; };
-		1F71F2122150ABF1004ED169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F71F21E2150AC08004ED169 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		1F71F21F2150AC08004ED169 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		1F71F2242150AD2E004ED169 /* YFLDragCardContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLDragCardContainer.h; sourceTree = "<group>"; };
-		1F71F2252150AD2E004ED169 /* YFLDragCardContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardContainer.m; sourceTree = "<group>"; };
-		1F71F2272150AD45004ED169 /* YFLDragCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLDragCardView.h; sourceTree = "<group>"; };
-		1F71F2282150AD45004ED169 /* YFLDragCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardView.m; sourceTree = "<group>"; };
-		1F71F22A2150AD7D004ED169 /* YFLDragCardConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLDragCardConfigure.h; sourceTree = "<group>"; };
-		1F71F22D2150E9D5004ED169 /* CardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
-		1F71F22E2150E9D5004ED169 /* CardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		1F92739821512C3B002C8E93 /* YFLDragCardViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLDragCardViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F92739B21512C3B002C8E93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F92739C21512C3B002C8E93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F9273A421512C3B002C8E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F9273A721512C3B002C8E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F9273A921512C3C002C8E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9273AA21512C3C002C8E93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F9273B021512C3C002C8E93 /* YFLDragCardViewProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLDragCardViewProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9273B421512C3C002C8E93 /* YFLDragCardViewProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardViewProjectTests.m; sourceTree = "<group>"; };
+		1F9273B621512C3C002C8E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9273BB21512C3C002C8E93 /* YFLDragCardViewProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLDragCardViewProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9273BF21512C3C002C8E93 /* YFLDragCardViewProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardViewProjectUITests.m; sourceTree = "<group>"; };
+		1F9273C121512C3C002C8E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9273CD21512C56002C8E93 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1F9273CE21512C56002C8E93 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		1F9273CF21512C57002C8E93 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		1F9273D021512C57002C8E93 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1F9273D421512C7A002C8E93 /* YFLDragCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardView.h; sourceTree = "<group>"; };
+		1F9273D521512C7A002C8E93 /* YFLDragCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardContainer.h; sourceTree = "<group>"; };
+		1F9273D621512C7A002C8E93 /* YFLDragCardConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardConfigure.h; sourceTree = "<group>"; };
+		1F9273D721512C7A002C8E93 /* YFLDragCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardContainer.m; sourceTree = "<group>"; };
+		1F9273D821512C7A002C8E93 /* YFLDragCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F71F1E62150ABED004ED169 /* Frameworks */ = {
+		1F92739521512C3B002C8E93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F71F1FE2150ABF1004ED169 /* Frameworks */ = {
+		1F9273AD21512C3C002C8E93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F71F2092150ABF1004ED169 /* Frameworks */ = {
+		1F9273B821512C3C002C8E93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,84 +86,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F71F1E02150ABED004ED169 = {
+		1F92738F21512C3B002C8E93 = {
 			isa = PBXGroup;
 			children = (
-				1F71F1EB2150ABED004ED169 /* YFLDragCardViewProject */,
-				1F71F2042150ABF1004ED169 /* YFLDragCardViewProjectTests */,
-				1F71F20F2150ABF1004ED169 /* YFLDragCardViewProjectUITests */,
-				1F71F1EA2150ABED004ED169 /* Products */,
+				1F92739A21512C3B002C8E93 /* YFLDragCardViewProject */,
+				1F9273B321512C3C002C8E93 /* YFLDragCardViewProjectTests */,
+				1F9273BE21512C3C002C8E93 /* YFLDragCardViewProjectUITests */,
+				1F92739921512C3B002C8E93 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1F71F1EA2150ABED004ED169 /* Products */ = {
+		1F92739921512C3B002C8E93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F71F1E92150ABED004ED169 /* YFLDragCardViewProject.app */,
-				1F71F2012150ABF1004ED169 /* YFLDragCardViewProjectTests.xctest */,
-				1F71F20C2150ABF1004ED169 /* YFLDragCardViewProjectUITests.xctest */,
+				1F92739821512C3B002C8E93 /* YFLDragCardViewProject.app */,
+				1F9273B021512C3C002C8E93 /* YFLDragCardViewProjectTests.xctest */,
+				1F9273BB21512C3C002C8E93 /* YFLDragCardViewProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F71F1EB2150ABED004ED169 /* YFLDragCardViewProject */ = {
+		1F92739A21512C3B002C8E93 /* YFLDragCardViewProject */ = {
 			isa = PBXGroup;
 			children = (
-				1F71F2232150ACD9004ED169 /* screensShots */,
-				1F71F2222150ACD1004ED169 /* resource */,
-				1F71F2212150ACC9004ED169 /* Lib */,
-				1F71F1EC2150ABED004ED169 /* AppDelegate.h */,
-				1F71F1ED2150ABED004ED169 /* AppDelegate.m */,
-				1F71F21E2150AC08004ED169 /* MainViewController.h */,
-				1F71F21F2150AC08004ED169 /* MainViewController.m */,
-				1F71F22D2150E9D5004ED169 /* CardView.h */,
-				1F71F22E2150E9D5004ED169 /* CardView.m */,
-				1F71F1F52150ABF1004ED169 /* Assets.xcassets */,
-				1F71F1F72150ABF1004ED169 /* LaunchScreen.storyboard */,
-				1F71F1FA2150ABF1004ED169 /* Info.plist */,
-				1F71F1FB2150ABF1004ED169 /* main.m */,
+				1F9273DC21512CAA002C8E93 /* screensShots */,
+				1F9273DB21512CA2002C8E93 /* resource */,
+				1F9273D321512C6F002C8E93 /* Lib */,
+				1F92739B21512C3B002C8E93 /* AppDelegate.h */,
+				1F92739C21512C3B002C8E93 /* AppDelegate.m */,
+				1F9273CD21512C56002C8E93 /* MainViewController.h */,
+				1F9273D021512C57002C8E93 /* MainViewController.m */,
+				1F9273CF21512C57002C8E93 /* CardView.h */,
+				1F9273CE21512C56002C8E93 /* CardView.m */,
+				1F9273A421512C3B002C8E93 /* Assets.xcassets */,
+				1F9273A621512C3B002C8E93 /* LaunchScreen.storyboard */,
+				1F9273A921512C3C002C8E93 /* Info.plist */,
+				1F9273AA21512C3C002C8E93 /* main.m */,
 			);
 			path = YFLDragCardViewProject;
 			sourceTree = "<group>";
 		};
-		1F71F2042150ABF1004ED169 /* YFLDragCardViewProjectTests */ = {
+		1F9273B321512C3C002C8E93 /* YFLDragCardViewProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F71F2052150ABF1004ED169 /* YFLDragCardViewProjectTests.m */,
-				1F71F2072150ABF1004ED169 /* Info.plist */,
+				1F9273B421512C3C002C8E93 /* YFLDragCardViewProjectTests.m */,
+				1F9273B621512C3C002C8E93 /* Info.plist */,
 			);
 			path = YFLDragCardViewProjectTests;
 			sourceTree = "<group>";
 		};
-		1F71F20F2150ABF1004ED169 /* YFLDragCardViewProjectUITests */ = {
+		1F9273BE21512C3C002C8E93 /* YFLDragCardViewProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1F71F2102150ABF1004ED169 /* YFLDragCardViewProjectUITests.m */,
-				1F71F2122150ABF1004ED169 /* Info.plist */,
+				1F9273BF21512C3C002C8E93 /* YFLDragCardViewProjectUITests.m */,
+				1F9273C121512C3C002C8E93 /* Info.plist */,
 			);
 			path = YFLDragCardViewProjectUITests;
 			sourceTree = "<group>";
 		};
-		1F71F2212150ACC9004ED169 /* Lib */ = {
+		1F9273D321512C6F002C8E93 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				1F71F22A2150AD7D004ED169 /* YFLDragCardConfigure.h */,
-				1F71F2242150AD2E004ED169 /* YFLDragCardContainer.h */,
-				1F71F2252150AD2E004ED169 /* YFLDragCardContainer.m */,
-				1F71F2272150AD45004ED169 /* YFLDragCardView.h */,
-				1F71F2282150AD45004ED169 /* YFLDragCardView.m */,
+				1F9273D621512C7A002C8E93 /* YFLDragCardConfigure.h */,
+				1F9273D521512C7A002C8E93 /* YFLDragCardContainer.h */,
+				1F9273D721512C7A002C8E93 /* YFLDragCardContainer.m */,
+				1F9273D421512C7A002C8E93 /* YFLDragCardView.h */,
+				1F9273D821512C7A002C8E93 /* YFLDragCardView.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		1F71F2222150ACD1004ED169 /* resource */ = {
+		1F9273DB21512CA2002C8E93 /* resource */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = resource;
 			sourceTree = "<group>";
 		};
-		1F71F2232150ACD9004ED169 /* screensShots */ = {
+		1F9273DC21512CAA002C8E93 /* screensShots */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -173,13 +173,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F71F1E82150ABED004ED169 /* YFLDragCardViewProject */ = {
+		1F92739721512C3B002C8E93 /* YFLDragCardViewProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F71F2152150ABF1004ED169 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProject" */;
+			buildConfigurationList = 1F9273C421512C3C002C8E93 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProject" */;
 			buildPhases = (
-				1F71F1E52150ABED004ED169 /* Sources */,
-				1F71F1E62150ABED004ED169 /* Frameworks */,
-				1F71F1E72150ABED004ED169 /* Resources */,
+				1F92739421512C3B002C8E93 /* Sources */,
+				1F92739521512C3B002C8E93 /* Frameworks */,
+				1F92739621512C3B002C8E93 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -187,68 +187,68 @@
 			);
 			name = YFLDragCardViewProject;
 			productName = YFLDragCardViewProject;
-			productReference = 1F71F1E92150ABED004ED169 /* YFLDragCardViewProject.app */;
+			productReference = 1F92739821512C3B002C8E93 /* YFLDragCardViewProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1F71F2002150ABF1004ED169 /* YFLDragCardViewProjectTests */ = {
+		1F9273AF21512C3C002C8E93 /* YFLDragCardViewProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F71F2182150ABF1004ED169 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProjectTests" */;
+			buildConfigurationList = 1F9273C721512C3C002C8E93 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProjectTests" */;
 			buildPhases = (
-				1F71F1FD2150ABF1004ED169 /* Sources */,
-				1F71F1FE2150ABF1004ED169 /* Frameworks */,
-				1F71F1FF2150ABF1004ED169 /* Resources */,
+				1F9273AC21512C3C002C8E93 /* Sources */,
+				1F9273AD21512C3C002C8E93 /* Frameworks */,
+				1F9273AE21512C3C002C8E93 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F71F2032150ABF1004ED169 /* PBXTargetDependency */,
+				1F9273B221512C3C002C8E93 /* PBXTargetDependency */,
 			);
 			name = YFLDragCardViewProjectTests;
 			productName = YFLDragCardViewProjectTests;
-			productReference = 1F71F2012150ABF1004ED169 /* YFLDragCardViewProjectTests.xctest */;
+			productReference = 1F9273B021512C3C002C8E93 /* YFLDragCardViewProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1F71F20B2150ABF1004ED169 /* YFLDragCardViewProjectUITests */ = {
+		1F9273BA21512C3C002C8E93 /* YFLDragCardViewProjectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F71F21B2150ABF1004ED169 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProjectUITests" */;
+			buildConfigurationList = 1F9273CA21512C3C002C8E93 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProjectUITests" */;
 			buildPhases = (
-				1F71F2082150ABF1004ED169 /* Sources */,
-				1F71F2092150ABF1004ED169 /* Frameworks */,
-				1F71F20A2150ABF1004ED169 /* Resources */,
+				1F9273B721512C3C002C8E93 /* Sources */,
+				1F9273B821512C3C002C8E93 /* Frameworks */,
+				1F9273B921512C3C002C8E93 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F71F20E2150ABF1004ED169 /* PBXTargetDependency */,
+				1F9273BD21512C3C002C8E93 /* PBXTargetDependency */,
 			);
 			name = YFLDragCardViewProjectUITests;
 			productName = YFLDragCardViewProjectUITests;
-			productReference = 1F71F20C2150ABF1004ED169 /* YFLDragCardViewProjectUITests.xctest */;
+			productReference = 1F9273BB21512C3C002C8E93 /* YFLDragCardViewProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1F71F1E12150ABED004ED169 /* Project object */ = {
+		1F92739021512C3B002C8E93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Cherish;
 				TargetAttributes = {
-					1F71F1E82150ABED004ED169 = {
+					1F92739721512C3B002C8E93 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					1F71F2002150ABF1004ED169 = {
+					1F9273AF21512C3C002C8E93 = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 1F71F1E82150ABED004ED169;
+						TestTargetID = 1F92739721512C3B002C8E93;
 					};
-					1F71F20B2150ABF1004ED169 = {
+					1F9273BA21512C3C002C8E93 = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 1F71F1E82150ABED004ED169;
+						TestTargetID = 1F92739721512C3B002C8E93;
 					};
 				};
 			};
-			buildConfigurationList = 1F71F1E42150ABED004ED169 /* Build configuration list for PBXProject "YFLDragCardViewProject" */;
+			buildConfigurationList = 1F92739321512C3B002C8E93 /* Build configuration list for PBXProject "YFLDragCardViewProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -256,36 +256,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 1F71F1E02150ABED004ED169;
-			productRefGroup = 1F71F1EA2150ABED004ED169 /* Products */;
+			mainGroup = 1F92738F21512C3B002C8E93;
+			productRefGroup = 1F92739921512C3B002C8E93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F71F1E82150ABED004ED169 /* YFLDragCardViewProject */,
-				1F71F2002150ABF1004ED169 /* YFLDragCardViewProjectTests */,
-				1F71F20B2150ABF1004ED169 /* YFLDragCardViewProjectUITests */,
+				1F92739721512C3B002C8E93 /* YFLDragCardViewProject */,
+				1F9273AF21512C3C002C8E93 /* YFLDragCardViewProjectTests */,
+				1F9273BA21512C3C002C8E93 /* YFLDragCardViewProjectUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1F71F1E72150ABED004ED169 /* Resources */ = {
+		1F92739621512C3B002C8E93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F71F1F92150ABF1004ED169 /* LaunchScreen.storyboard in Resources */,
-				1F71F1F62150ABF1004ED169 /* Assets.xcassets in Resources */,
+				1F9273A821512C3B002C8E93 /* LaunchScreen.storyboard in Resources */,
+				1F9273A521512C3B002C8E93 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F71F1FF2150ABF1004ED169 /* Resources */ = {
+		1F9273AE21512C3C002C8E93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F71F20A2150ABF1004ED169 /* Resources */ = {
+		1F9273B921512C3C002C8E93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,55 +295,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F71F1E52150ABED004ED169 /* Sources */ = {
+		1F92739421512C3B002C8E93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F71F22F2150E9D5004ED169 /* CardView.m in Sources */,
-				1F71F2292150AD45004ED169 /* YFLDragCardView.m in Sources */,
-				1F71F1FC2150ABF1004ED169 /* main.m in Sources */,
-				1F71F2202150AC08004ED169 /* MainViewController.m in Sources */,
-				1F71F1EE2150ABED004ED169 /* AppDelegate.m in Sources */,
-				1F71F2262150AD2E004ED169 /* YFLDragCardContainer.m in Sources */,
+				1F9273D921512C7A002C8E93 /* YFLDragCardContainer.m in Sources */,
+				1F9273D121512C57002C8E93 /* CardView.m in Sources */,
+				1F9273AB21512C3C002C8E93 /* main.m in Sources */,
+				1F92739D21512C3B002C8E93 /* AppDelegate.m in Sources */,
+				1F9273DA21512C7A002C8E93 /* YFLDragCardView.m in Sources */,
+				1F9273D221512C57002C8E93 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F71F1FD2150ABF1004ED169 /* Sources */ = {
+		1F9273AC21512C3C002C8E93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F71F2062150ABF1004ED169 /* YFLDragCardViewProjectTests.m in Sources */,
+				1F9273B521512C3C002C8E93 /* YFLDragCardViewProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F71F2082150ABF1004ED169 /* Sources */ = {
+		1F9273B721512C3C002C8E93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F71F2112150ABF1004ED169 /* YFLDragCardViewProjectUITests.m in Sources */,
+				1F9273C021512C3C002C8E93 /* YFLDragCardViewProjectUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F71F2032150ABF1004ED169 /* PBXTargetDependency */ = {
+		1F9273B221512C3C002C8E93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F71F1E82150ABED004ED169 /* YFLDragCardViewProject */;
-			targetProxy = 1F71F2022150ABF1004ED169 /* PBXContainerItemProxy */;
+			target = 1F92739721512C3B002C8E93 /* YFLDragCardViewProject */;
+			targetProxy = 1F9273B121512C3C002C8E93 /* PBXContainerItemProxy */;
 		};
-		1F71F20E2150ABF1004ED169 /* PBXTargetDependency */ = {
+		1F9273BD21512C3C002C8E93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F71F1E82150ABED004ED169 /* YFLDragCardViewProject */;
-			targetProxy = 1F71F20D2150ABF1004ED169 /* PBXContainerItemProxy */;
+			target = 1F92739721512C3B002C8E93 /* YFLDragCardViewProject */;
+			targetProxy = 1F9273BC21512C3C002C8E93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1F71F1F72150ABF1004ED169 /* LaunchScreen.storyboard */ = {
+		1F9273A621512C3B002C8E93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1F71F1F82150ABF1004ED169 /* Base */,
+				1F9273A721512C3B002C8E93 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -351,7 +351,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1F71F2132150ABF1004ED169 /* Debug */ = {
+		1F9273C221512C3C002C8E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,7 +409,7 @@
 			};
 			name = Debug;
 		};
-		1F71F2142150ABF1004ED169 /* Release */ = {
+		1F9273C321512C3C002C8E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -461,11 +461,12 @@
 			};
 			name = Release;
 		};
-		1F71F2162150ABF1004ED169 /* Debug */ = {
+		1F9273C521512C3C002C8E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9V7FM4SGX;
 				INFOPLIST_FILE = YFLDragCardViewProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,11 +479,12 @@
 			};
 			name = Debug;
 		};
-		1F71F2172150ABF1004ED169 /* Release */ = {
+		1F9273C621512C3C002C8E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9V7FM4SGX;
 				INFOPLIST_FILE = YFLDragCardViewProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,7 +497,7 @@
 			};
 			name = Release;
 		};
-		1F71F2192150ABF1004ED169 /* Debug */ = {
+		1F9273C821512C3C002C8E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,7 +515,7 @@
 			};
 			name = Debug;
 		};
-		1F71F21A2150ABF1004ED169 /* Release */ = {
+		1F9273C921512C3C002C8E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,7 +533,7 @@
 			};
 			name = Release;
 		};
-		1F71F21C2150ABF1004ED169 /* Debug */ = {
+		1F9273CB21512C3C002C8E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -548,7 +550,7 @@
 			};
 			name = Debug;
 		};
-		1F71F21D2150ABF1004ED169 /* Release */ = {
+		1F9273CC21512C3C002C8E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -568,43 +570,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F71F1E42150ABED004ED169 /* Build configuration list for PBXProject "YFLDragCardViewProject" */ = {
+		1F92739321512C3B002C8E93 /* Build configuration list for PBXProject "YFLDragCardViewProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F71F2132150ABF1004ED169 /* Debug */,
-				1F71F2142150ABF1004ED169 /* Release */,
+				1F9273C221512C3C002C8E93 /* Debug */,
+				1F9273C321512C3C002C8E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F71F2152150ABF1004ED169 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProject" */ = {
+		1F9273C421512C3C002C8E93 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F71F2162150ABF1004ED169 /* Debug */,
-				1F71F2172150ABF1004ED169 /* Release */,
+				1F9273C521512C3C002C8E93 /* Debug */,
+				1F9273C621512C3C002C8E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F71F2182150ABF1004ED169 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProjectTests" */ = {
+		1F9273C721512C3C002C8E93 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F71F2192150ABF1004ED169 /* Debug */,
-				1F71F21A2150ABF1004ED169 /* Release */,
+				1F9273C821512C3C002C8E93 /* Debug */,
+				1F9273C921512C3C002C8E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F71F21B2150ABF1004ED169 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProjectUITests" */ = {
+		1F9273CA21512C3C002C8E93 /* Build configuration list for PBXNativeTarget "YFLDragCardViewProjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F71F21C2150ABF1004ED169 /* Debug */,
-				1F71F21D2150ABF1004ED169 /* Release */,
+				1F9273CB21512C3C002C8E93 /* Debug */,
+				1F9273CC21512C3C002C8E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1F71F1E12150ABED004ED169 /* Project object */;
+	rootObject = 1F92739021512C3B002C8E93 /* Project object */;
 }

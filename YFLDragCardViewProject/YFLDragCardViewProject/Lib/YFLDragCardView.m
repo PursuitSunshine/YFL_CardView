@@ -39,12 +39,15 @@
 #pragma mark - Private Method
 - (void)setUp
 {
+    //为了添加手势
+    self.userInteractionEnabled = YES;
     self.layer.cornerRadius = cardCornerRadius;
     self.layer.borderWidth = cardCornerBorderWidth;
     CGFloat colorRate = 176.0f/255.0f;
     self.layer.borderColor = [UIColor colorWithRed:colorRate green:colorRate blue:colorRate alpha:1].CGColor;
     self.layer.masksToBounds = YES;
     
+    self.backgroundColor = [UIColor redColor];
 }
 
 #pragma mark - Public Method

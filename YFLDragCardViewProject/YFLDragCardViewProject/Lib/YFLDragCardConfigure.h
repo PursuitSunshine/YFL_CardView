@@ -32,6 +32,12 @@ static const CGFloat cardCornerRadius = 10.0f;
 /** 卡片边缘宽度**/
 static const CGFloat cardCornerBorderWidth = 0.45f;
 
+/** 第二张卡片的sx缩放系数 **/
+static const CGFloat secondCardSxScale = 0.95f;
+
+/** 第三张卡片sx缩放系数 **/
+static const CGFloat thirdCardSxScale = 0.9f;
+
 /** 物理屏幕宽度 **/
 #define screenWidth UIApplication.sharedApplication.keyWindow.bounds.size.width
 
