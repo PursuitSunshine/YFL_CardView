@@ -47,7 +47,7 @@
     self.layer.borderColor = [UIColor colorWithRed:colorRate green:colorRate blue:colorRate alpha:1].CGColor;
     self.layer.masksToBounds = YES;
     
-    self.backgroundColor = [UIColor redColor];
+    self.backgroundColor = [UIColor cyanColor];
 }
 
 #pragma mark - Public Method

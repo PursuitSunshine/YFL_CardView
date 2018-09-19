@@ -38,19 +38,14 @@
 
 @implementation YFLDragCardContainer
 
-
-
 #pragma mark - Init Methods
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    
-    if (self) {
-        
+    if (self)
+    {
         [self initData];
-        
     }
-    
     return self;
 }
 
@@ -62,22 +57,6 @@
     self.isMoveIng = NO;
     self.loadedIndex = 0;
     self.backgroundColor = [UIColor whiteColor];
-}
-
-#pragma mark - Public Methods
-- (void)reloadData
-{
-    if (self.dataSource && [self.dataSource respondsToSelector:@selector(numberOfRowsInYFLDragCardContainer:)] && [self.dataSource respondsToSelector:@selector(container:viewForRowsAtIndex:)]) {
-        
-        [self addSubViews];
-
-        [self resetSubViewsLocation];
-        
-    }else{
-        
-        NSAssert(self.dataSource, @"需要设置数据源代理并实现其方法");
-    }
-    
 }
 
 - (void)addSubViews
@@ -92,130 +71,143 @@
         {
             YFLDragCardView *cardView = [self.dataSource container:self viewForRowsAtIndex:self.loadedIndex];
             cardView.frame = CGRectMake(containerEdge, containerEdge, self.frame.size.width-2*containerEdge, self.frame.size.height-2*(containerEdge+cardEdge));
-            [self recordFrame:cardView];
             [cardView YFLDragCardViewLayoutSubviews];
+            [self recordFrame:cardView];
             cardView.tag = self.loadedIndex;
             [cardView addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTapGesture:)]];
             [cardView addGestureRecognizer:[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePanGesture:)]];
             [self addSubview:cardView];
             [self sendSubviewToBack:cardView];
             [self.cards addObject:cardView];
-            self.loadedIndex += 1;
+            self.loadedIndex++;
+            
         }
     }
     
     
 }//添加子视图
 
-- (void)recordFrame:(YFLDragCardView *)cardView
+- (void)resetLayoutSubviews
 {
-    if (self.loadedIndex >= 3)
-    {
-        cardView.frame = self.lastCardFrame;
+    //动画时允许用户交流，比如触摸 | 时间曲线函数，缓入缓出，中间快
+    [UIView animateWithDuration:5.0f delay:0.0f options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveEaseInOut animations:^{
         
-    }else
-    {
-        if (CGRectIsEmpty(self.firstCardFrame))
-        {
-            self.firstCardFrame = cardView.frame;
-            self.center = cardView.center;
-        }
-    }
-}
-
-- (void)resetSubViewsLocation
-{
- 
-    for (int i = 0; i < self.cards.count; i++)
-    {
-        YFLDragCardView *cardView = [self.cards objectAtIndex:i];
-        cardView.transform = CGAffineTransformIdentity; //初始化
-        CGRect frame = self.firstCardFrame;
-        
-        switch (i)
-        {
-            case 0:
-                
-                cardView.frame = self.firstCardFrame;
-                break;
-                
-            case 1:
-            {
-                frame.origin.y = frame.origin.y+cardEdge;
-                cardView.frame = frame;
-                cardView.transform = CGAffineTransformScale(CGAffineTransformIdentity, secondCardSxScale, 1);
+        for (int i = 0; i < self.cards.count; i++){
+            YFLDragCardView *cardView = [self.cards objectAtIndex:i];
+            cardView.transform = CGAffineTransformScale(CGAffineTransformIdentity,1-i*0.05, 1);
+            CGRect frame = cardView.frame;
+            frame.origin.y = frame.origin.y+i*cardEdge;
+            cardView.frame = frame;
+            cardView.originTransForm = cardView.transform;
+            
+            if (CGRectIsEmpty(self.lastCardFrame) && i == 2){
+                self.lastCardFrame = frame;
+                self.lastCardTransform = cardView.transform;
             }
-                break;
-             case 2:
-            {
-                frame.origin.y = frame.origin.y + 2*cardEdge;
-                cardView.frame = frame;
-                cardView.transform = CGAffineTransformScale(CGAffineTransformIdentity, thirdCardSxScale, 1);
-                if (CGRectIsEmpty(self.lastCardFrame)) {
-                    
-                    self.lastCardFrame = frame;
-                    self.lastCardTransform = cardView.transform;
-                    
-                }
-            }
-                break;
-                
-            default:
-                break;
+            
         }
         
-        cardView.originTransForm = cardView.transform;
+    } completion:^(BOOL finished) {
         
-    }
- 
+        if ([self.delegate respondsToSelector:@selector(container:dataSourceIsEmpty:)]) {
+            
+            [self.delegate container:self
+                   dataSourceIsEmpty:self.cards.count == 0 ? YES : NO];
+        }
+        
+        
+    }];
+    
+    
+    
 }//布局子视图
 
-
-
-#pragma mark - Action Methods
-- (void)handleTapGesture:(UITapGestureRecognizer*)tap
+- (void)recordFrame:(YFLDragCardView *)cardView
 {
-    if ([self.delegate respondsToSelector:@selector(container:didSelectRowAtIndex:)])
-    {
+    if (self.loadedIndex >= 3){
         
-        [self.delegate container:self didSelectRowAtIndex:tap.view.tag];
+        cardView.frame = self.lastCardFrame;
         
+    }else{
+        
+        if (CGRectIsEmpty(self.firstCardFrame)){
+            self.firstCardFrame = cardView.frame;
+            self.cardCenter = cardView.center;
+        }
     }
-    
-}//单击手势
-
-- (void)handlePanGesture:(UIPanGestureRecognizer*)pan
-{
-    if (pan.state == UIGestureRecognizerStateBegan)
-    {
-        
-        // TO DO
-        
-    }else if (pan.state == UIGestureRecognizerStateChanged)
-    {
-        
-        
-    }else if (pan.state == UIGestureRecognizerStateEnded || pan.state == UIGestureRecognizerStateEnded)
-    {
-        
-    }
-   
 }
 
+#pragma mark - Public Methods
+- (void)reloadData
+{
+    if (self.dataSource && [self.dataSource respondsToSelector:@selector(numberOfRowsInYFLDragCardContainer:)] && [self.dataSource respondsToSelector:@selector(container:viewForRowsAtIndex:)]) {
+        
+        [self addSubViews];
+
+        [self resetLayoutSubviews];
+        
+    }else{
+        
+        NSAssert(self.dataSource, @"check dataSource and dataSource Methods!");
+    }
+    
+}
+
+- (YFLDragCardView *)getCurrentShowCardView
+{
+    return self.cards.firstObject;
+}
+
+- (NSInteger)getCurrentShowCardViewIndex
+{
+    return self.cards.firstObject.tag;
+}
 
 - (void)removeCardViewForDirection:(ContainerDragDirection)direction
 {
     
 }
 
-- (YFLDragCardView *)getCurrentShowCardView
+#pragma mark - Action Methods
+- (void)handleTapGesture:(UITapGestureRecognizer*)tap
 {
-    return nil;
+    if ([self.delegate respondsToSelector:@selector(container:didSelectRowAtIndex:)])
+    {
+        [self.delegate container:self didSelectRowAtIndex:tap.view.tag];
+    }
+    
+}//单击手势
+
+- (void)handlePanGesture:(UIPanGestureRecognizer*)pan
+{
+    BOOL canEdit = YES;
+    
+    if ([self.delegate respondsToSelector:@selector(container:canDragForCardView:)]) {
+        
+        canEdit = [self.delegate container:self canDragForCardView:(YFLDragCardView*)pan.view];
+    }
+    
+    if (canEdit) {
+        
+        if (pan.state == UIGestureRecognizerStateBegan)
+        {
+            
+            // TO DO
+            
+            
+        }else if (pan.state == UIGestureRecognizerStateChanged)
+        {
+            
+            
+        }else if (pan.state == UIGestureRecognizerStateEnded || pan.state == UIGestureRecognizerStateEnded)
+        {
+            
+        }
+        
+    }
+    
+   
 }
 
-- (NSInteger)getCurrentShowCardViewIndex
-{
-    return 0;
-}
 
 @end

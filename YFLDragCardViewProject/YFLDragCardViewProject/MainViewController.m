@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 #import "YFLDragCardContainer.h"
-@interface MainViewController ()<YFLDragCardContainerDataSource>
+@interface MainViewController ()<YFLDragCardContainerDataSource,UICollectionViewDelegate>
 
 @end
 
@@ -21,11 +21,12 @@
 
     self.title = @"仿探探、陌陌左右滑动";
     
-    YFLDragCardContainer *container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, screenWidth, 300)];
+    YFLDragCardContainer *container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 300)];
     container.dataSource = self;
     [self.view addSubview:container];
 
     [container reloadData];
+
 
 }
 
@@ -37,7 +38,7 @@
 /** 显示数据源 **/
 - (YFLDragCardView *)container:(YFLDragCardContainer *)container viewForRowsAtIndex:(NSInteger)index
 {
-    YFLDragCardView *cardView = [[YFLDragCardView alloc]init];
+    YFLDragCardView *cardView = [[YFLDragCardView alloc]initWithFrame:container.bounds];
     return cardView;
 }
 

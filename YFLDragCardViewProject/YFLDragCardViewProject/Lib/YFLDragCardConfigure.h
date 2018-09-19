@@ -10,7 +10,7 @@
 #define YFLDragCardConfigure_h
 
 /** 滑动方向 **/
-typedef NS_OPTIONS(NSInteger, ContainerDragDirection)
+typedef NS_ENUM(NSInteger, ContainerDragDirection)
 {
     ContainerDragDefaults,
     ContainerDragLeft,
@@ -39,10 +39,10 @@ static const CGFloat secondCardSxScale = 0.95f;
 static const CGFloat thirdCardSxScale = 0.9f;
 
 /** 物理屏幕宽度 **/
-#define screenWidth UIApplication.sharedApplication.keyWindow.bounds.size.width
+#define ScreenWidth  UIScreen.mainScreen.bounds.size.width
 
 /** 物理屏幕高度 **/
-#define screenHeight UIApplication.sharedApplication.keyWindow.bounds.size.height
+#define ScreenHeight UIScreen.mainScreen.bounds.size.height
 
 
 #endif /* YFLDragCardConfigure_h */

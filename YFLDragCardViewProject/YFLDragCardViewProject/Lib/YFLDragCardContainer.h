@@ -31,10 +31,13 @@
 - (void)container:(YFLDragCardContainer *)container didSelectRowAtIndex:(NSInteger)index;
 
 /** 拖到最后一张卡片 **/
-- (void)container:(YFLDragCardContainer *)container dragDidFinshForLastItem:(BOOL)lastItem;
+- (void)container:(YFLDragCardContainer *)container dataSourceIsEmpty:(BOOL)isEmpty;
 
 /** 即将展示的cardview **/
 - (void)container:(YFLDragCardContainer *)container willShowCardView:(YFLDragCardView *)cardView;
+
+/**  当前cardview 是否可以拖拽，默认YES **/
+- (BOOL)container:(YFLDragCardContainer *)container canDragForCardView:(YFLDragCardView *)cardView;
 
 /** 卡片处于拖拽中回调**/
 - (void)container:(YFLDragCardContainer *)container dargingForCardView:(YFLDragCardView *)cardView direction:(ContainerDragDirection)direction widthRate:(CGFloat)widthRate  heightRate:(CGFloat)heightRate;
