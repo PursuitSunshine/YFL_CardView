@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YFLDragCardConfigure.h"
+#import "YFLDragConfigure.h"
 @interface YFLDragCardView : UIView
 
 
 @property (nonatomic,assign) CGAffineTransform originTransForm;
 
+
+@property (nonatomic,strong) YFLDragConfigure *configure;
 
 /**
  布局子视图，其子类重写，并在其进行布局

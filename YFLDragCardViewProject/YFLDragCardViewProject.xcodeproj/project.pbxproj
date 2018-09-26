@@ -17,6 +17,7 @@
 		1F9273D221512C57002C8E93 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D021512C57002C8E93 /* MainViewController.m */; };
 		1F9273D921512C7A002C8E93 /* YFLDragCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D721512C7A002C8E93 /* YFLDragCardContainer.m */; };
 		1F9273DA21512C7A002C8E93 /* YFLDragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D821512C7A002C8E93 /* YFLDragCardView.m */; };
+		1FE3BE0E215BAA0E00B676CA /* YFLDragConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3BE0D215BAA0E00B676CA /* YFLDragConfigure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +57,10 @@
 		1F9273D021512C57002C8E93 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1F9273D421512C7A002C8E93 /* YFLDragCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardView.h; sourceTree = "<group>"; };
 		1F9273D521512C7A002C8E93 /* YFLDragCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardContainer.h; sourceTree = "<group>"; };
-		1F9273D621512C7A002C8E93 /* YFLDragCardConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardConfigure.h; sourceTree = "<group>"; };
 		1F9273D721512C7A002C8E93 /* YFLDragCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardContainer.m; sourceTree = "<group>"; };
 		1F9273D821512C7A002C8E93 /* YFLDragCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardView.m; sourceTree = "<group>"; };
+		1FE3BE0C215BAA0E00B676CA /* YFLDragConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLDragConfigure.h; sourceTree = "<group>"; };
+		1FE3BE0D215BAA0E00B676CA /* YFLDragConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragConfigure.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +149,8 @@
 		1F9273D321512C6F002C8E93 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				1F9273D621512C7A002C8E93 /* YFLDragCardConfigure.h */,
+				1FE3BE0C215BAA0E00B676CA /* YFLDragConfigure.h */,
+				1FE3BE0D215BAA0E00B676CA /* YFLDragConfigure.m */,
 				1F9273D521512C7A002C8E93 /* YFLDragCardContainer.h */,
 				1F9273D721512C7A002C8E93 /* YFLDragCardContainer.m */,
 				1F9273D421512C7A002C8E93 /* YFLDragCardView.h */,
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE3BE0E215BAA0E00B676CA /* YFLDragConfigure.m in Sources */,
 				1F9273D921512C7A002C8E93 /* YFLDragCardContainer.m in Sources */,
 				1F9273D121512C57002C8E93 /* CardView.m in Sources */,
 				1F9273AB21512C3C002C8E93 /* main.m in Sources */,

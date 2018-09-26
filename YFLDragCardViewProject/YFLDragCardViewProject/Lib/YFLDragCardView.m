@@ -41,13 +41,17 @@
 {
     //为了添加手势
     self.userInteractionEnabled = YES;
-    self.layer.cornerRadius = cardCornerRadius;
-    self.layer.borderWidth = cardCornerBorderWidth;
-    CGFloat colorRate = 176.0f/255.0f;
-    self.layer.borderColor = [UIColor colorWithRed:colorRate green:colorRate blue:colorRate alpha:1].CGColor;
-    self.layer.masksToBounds = YES;
-    
     self.backgroundColor = [UIColor cyanColor];
+}
+
+
+- (void)setConfigure:(YFLDragConfigure *)configure
+{
+    _configure = configure;
+    self.layer.cornerRadius = configure.cardCornerRadius;
+    self.layer.borderWidth = configure.cardCornerBorderWidth;
+    self.layer.borderColor = configure.cardBordColor.CGColor;
+    self.layer.masksToBounds = YES;
 }
 
 #pragma mark - Public Method
@@ -62,6 +66,7 @@
     
     
 }
+
 
 
 

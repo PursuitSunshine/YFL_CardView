@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "YFLDragCardView.h"
-
 @class YFLDragCardContainer;
 
 @protocol YFLDragCardContainerDataSource <NSObject>
@@ -50,6 +49,9 @@
 
 @interface YFLDragCardContainer : UIView
 
+
+/** 初始化方法 **/
+- (instancetype)initWithFrame:(CGRect)frame configure:(YFLDragConfigure*)configure;
 
 @property (nonatomic, weak, nullable) id <YFLDragCardContainerDataSource> dataSource;
 

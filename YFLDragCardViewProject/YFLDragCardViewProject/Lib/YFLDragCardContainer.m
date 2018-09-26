@@ -7,7 +7,7 @@
 //
 
 #import "YFLDragCardContainer.h"
-
+#import "YFLDragConfigure.h"
 @interface YFLDragCardContainer()
 
 /** YFLDragCardView实例的集合 **/
@@ -34,35 +34,56 @@
 /** 记录最后一个card的transform **/
 @property (nonatomic,assign) CGAffineTransform lastCardTransform;
 
+@property (nonatomic,strong) YFLDragConfigure *configure;
+
 @end
 
 @implementation YFLDragCardContainer
 
 #pragma mark - Init Methods
-- (id)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    return [self initWithFrame:frame configure:[self setDefaultsConfigures]];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame configure:(YFLDragConfigure*)configure
 {
     self = [super initWithFrame:frame];
     if (self)
     {
-        [self initData];
+        [self initDataConfigure:configure];
+        
     }
     return self;
 }
 
 #pragma mark - Private Methods
-- (void)initData
+- (YFLDragConfigure*)setDefaultsConfigures
+{
+    YFLDragConfigure *configure = [[YFLDragConfigure alloc]init];
+    configure.visableCount = 3;
+    configure.containerEdge = 10.0f;
+    configure.cardEdge = 5.0f;
+    configure.cardCornerRadius = 10.0f;
+    configure.cardCornerBorderWidth = 0.45f;
+    configure.cardBordColor = [UIColor colorWithRed:176.0f/255.0f green:176.0f/255.0f blue:176.0f/255.0f alpha:1];
+    return configure;
+}
+
+- (void)initDataConfigure:(YFLDragConfigure*)configure
 {
     self.cards = [[NSMutableArray alloc]init];
     self.direction = ContainerDragDefaults;
     self.isMoveIng = NO;
     self.loadedIndex = 0;
     self.backgroundColor = [UIColor whiteColor];
+    self.configure = configure ? configure:[self setDefaultsConfigures];
 }
 
 - (void)addSubViews
 {
     NSInteger sum = [self.dataSource numberOfRowsInYFLDragCardContainer:self];
-    NSInteger preLoadViewCount = (sum <= visableCount) ? sum : visableCount;
+    NSInteger preLoadViewCount = (sum <= self.configure.visableCount) ? sum : self.configure.visableCount;
     //预防越界
     if (self.loadedIndex < sum)
     {
@@ -70,7 +91,8 @@
         for (NSInteger i = self.cards.count; i < (self.isMoveIng ? preLoadViewCount+1:preLoadViewCount); i++)
         {
             YFLDragCardView *cardView = [self.dataSource container:self viewForRowsAtIndex:self.loadedIndex];
-            cardView.frame = CGRectMake(containerEdge, containerEdge, self.frame.size.width-2*containerEdge, self.frame.size.height-2*(containerEdge+cardEdge));
+            cardView.frame = CGRectMake(self.configure.containerEdge, self.configure.containerEdge, self.frame.size.width-2*self.configure.containerEdge, self.frame.size.height-2*(self.configure.containerEdge+self.configure.cardEdge));
+            [cardView setConfigure:self.configure];
             [cardView YFLDragCardViewLayoutSubviews];
             [self recordFrame:cardView];
             cardView.tag = self.loadedIndex;
@@ -96,7 +118,7 @@
             YFLDragCardView *cardView = [self.cards objectAtIndex:i];
             cardView.transform = CGAffineTransformScale(CGAffineTransformIdentity,1-i*0.05, 1);
             CGRect frame = cardView.frame;
-            frame.origin.y = frame.origin.y+i*cardEdge;
+            frame.origin.y = frame.origin.y+i*self.configure.cardEdge;
             cardView.frame = frame;
             cardView.originTransForm = cardView.transform;
             
@@ -104,7 +126,6 @@
                 self.lastCardFrame = frame;
                 self.lastCardTransform = cardView.transform;
             }
-            
         }
         
     } completion:^(BOOL finished) {

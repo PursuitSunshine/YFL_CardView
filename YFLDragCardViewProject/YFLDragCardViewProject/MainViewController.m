@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 #import "YFLDragCardContainer.h"
-@interface MainViewController ()<YFLDragCardContainerDataSource,UICollectionViewDelegate>
+@interface MainViewController ()<YFLDragCardContainerDataSource,UITableViewDataSource>
 
 @end
 
@@ -24,7 +24,6 @@
     YFLDragCardContainer *container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 300)];
     container.dataSource = self;
     [self.view addSubview:container];
-
     [container reloadData];
 
 
