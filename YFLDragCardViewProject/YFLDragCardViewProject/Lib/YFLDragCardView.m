@@ -39,12 +39,14 @@
 #pragma mark - Private Method
 - (void)setUp
 {
-    //为了添加手势
+
     self.userInteractionEnabled = YES;
     self.backgroundColor = [UIColor cyanColor];
 }
 
 
+
+#pragma mark - Public Method
 - (void)setConfigure:(YFLDragConfigure *)configure
 {
     _configure = configure;
@@ -54,7 +56,7 @@
     self.layer.masksToBounds = YES;
 }
 
-#pragma mark - Public Method
+
 - (void)YFLDragCardViewLayoutSubviews
 {
     

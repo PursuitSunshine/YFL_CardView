@@ -29,7 +29,7 @@
 /** 点击卡片回调 **/
 - (void)container:(YFLDragCardContainer *)container didSelectRowAtIndex:(NSInteger)index;
 
-/** 拖到最后一张卡片 **/
+/** 拖到最后一张卡片 YES，空，可继续调用reloadData分页数据**/
 - (void)container:(YFLDragCardContainer *)container dataSourceIsEmpty:(BOOL)isEmpty;
 
 /** 即将展示的cardview **/
@@ -39,9 +39,9 @@
 - (BOOL)container:(YFLDragCardContainer *)container canDragForCardView:(YFLDragCardView *)cardView;
 
 /** 卡片处于拖拽中回调**/
-- (void)container:(YFLDragCardContainer *)container dargingForCardView:(YFLDragCardView *)cardView direction:(ContainerDragDirection)direction widthRate:(CGFloat)widthRate  heightRate:(CGFloat)heightRate;
+- (void)container:(YFLDragCardContainer *)container dargingForCardView:(YFLDragCardView *)cardView direction:(ContainerDragDirection)direction widthRate:(float)widthRate  heightRate:(float)heightRate;
 
-/** 卡片拖拽结束回调 **/
+/** 卡片拖拽结束回调（卡片消失） **/
 - (void)container:(YFLDragCardContainer *)container dragDidFinshForDirection:(ContainerDragDirection)direction forCardView:(YFLDragCardView *)cardView;
 
 @end
@@ -53,8 +53,13 @@
 /** 初始化方法 **/
 - (instancetype)initWithFrame:(CGRect)frame configure:(YFLDragConfigure*)configure;
 
+/** 默认初始化方法 **/
+- (instancetype)initWithFrame:(CGRect)frame;
+
+/** 数据源代理 **/
 @property (nonatomic, weak, nullable) id <YFLDragCardContainerDataSource> dataSource;
 
+/**  动作代理 **/
 @property (nonatomic, weak, nullable) id <YFLDragCardContainerDelegate> delegate;
 
 /** 刷新数据 **/
