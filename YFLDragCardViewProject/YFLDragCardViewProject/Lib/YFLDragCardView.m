@@ -39,12 +39,9 @@
 #pragma mark - Private Method
 - (void)setUp
 {
-
     self.userInteractionEnabled = YES;
     self.backgroundColor = [UIColor cyanColor];
 }
-
-
 
 #pragma mark - Public Method
 - (void)setConfigure:(YFLDragConfigure *)configure
@@ -56,16 +53,13 @@
     self.layer.masksToBounds = YES;
 }
 
-
 - (void)YFLDragCardViewLayoutSubviews
 {
-    
 }
 
 
 - (void)startAnimatingForDirection:(ContainerDragDirection)direction
 {
-    
     
 }
 

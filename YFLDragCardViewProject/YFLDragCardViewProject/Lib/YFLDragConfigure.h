@@ -35,7 +35,6 @@ typedef NS_ENUM(NSInteger, ContainerDragDirection)
 
 /** 物理屏幕宽度 **/
 #define ScreenWidth  UIScreen.mainScreen.bounds.size.width
-
 /** 物理屏幕高度 **/
 #define ScreenHeight UIScreen.mainScreen.bounds.size.height
 

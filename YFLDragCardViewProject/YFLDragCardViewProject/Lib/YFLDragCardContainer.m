@@ -42,10 +42,8 @@
 - (instancetype)initWithFrame:(CGRect)frame configure:(YFLDragConfigure*)configure
 {
     self = [super initWithFrame:frame];
-    if (self)
-    {
+    if (self){
         [self initDataConfigure:configure];
-        
     }
     return self;
 }
@@ -101,6 +99,14 @@
 
 - (void)resetLayoutSubviews
 {
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(container:dataSourceIsEmpty:)]) {
+        if (self.cards.count == 0) {
+            
+            [self.delegate container:self dataSourceIsEmpty:YES];
+            
+        }
+    }
     //动画时允许用户交流，比如触摸 | 时间曲线函数，缓入缓出，中间快
     [UIView animateWithDuration:0.5f delay:0.0f usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveEaseInOut animations:^{
         
@@ -140,23 +146,10 @@
         }
         
     } completion:^(BOOL finished) {
-      
-//        if (self.delegate && [self.delegate respondsToSelector:@selector(container:dataSourceIsEmpty:)]) {
-//            
-//            if (self.cards.count == 0) {
-//                
-//                [self.delegate container:self
-//                       dataSourceIsEmpty:YES];
-//                
-//            }
-//            
-//        }
+
         
     }];
-    
-    
-    
-    
+
 }//布局子视图
 
 - (void)recordFrame:(YFLDragCardView *)cardView
