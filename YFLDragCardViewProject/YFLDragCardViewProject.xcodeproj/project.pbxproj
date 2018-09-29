@@ -26,6 +26,7 @@
 		1F9273D221512C57002C8E93 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D021512C57002C8E93 /* MainViewController.m */; };
 		1F9273D921512C7A002C8E93 /* YFLDragCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D721512C7A002C8E93 /* YFLDragCardContainer.m */; };
 		1F9273DA21512C7A002C8E93 /* YFLDragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9273D821512C7A002C8E93 /* YFLDragCardView.m */; };
+		1FB413CC215F5C4C002A0791 /* IMG_3694.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 1FB413CB215F5C4B002A0791 /* IMG_3694.GIF */; };
 		1FE3BE0E215BAA0E00B676CA /* YFLDragConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3BE0D215BAA0E00B676CA /* YFLDragConfigure.m */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		1F9273D521512C7A002C8E93 /* YFLDragCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardContainer.h; sourceTree = "<group>"; };
 		1F9273D721512C7A002C8E93 /* YFLDragCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardContainer.m; sourceTree = "<group>"; };
 		1F9273D821512C7A002C8E93 /* YFLDragCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardView.m; sourceTree = "<group>"; };
+		1FB413CB215F5C4B002A0791 /* IMG_3694.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_3694.GIF; sourceTree = "<group>"; };
 		1FE3BE0C215BAA0E00B676CA /* YFLDragConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLDragConfigure.h; sourceTree = "<group>"; };
 		1FE3BE0D215BAA0E00B676CA /* YFLDragConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragConfigure.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +182,7 @@
 		1F9273DB21512CA2002C8E93 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				1FB413CB215F5C4B002A0791 /* IMG_3694.GIF */,
 				1F4CD058215CD9C800C1578E /* image_1.jpg */,
 				1F4CD056215CD9C700C1578E /* image_2.jpg */,
 				1F4CD057215CD9C800C1578E /* image_3.jpg */,
@@ -305,6 +308,7 @@
 			files = (
 				1F9273A821512C3B002C8E93 /* LaunchScreen.storyboard in Resources */,
 				1F4CD062215CD9C900C1578E /* image_4.jpg in Resources */,
+				1FB413CC215F5C4C002A0791 /* IMG_3694.GIF in Resources */,
 				1F9273A521512C3B002C8E93 /* Assets.xcassets in Resources */,
 				1F4CD063215CD9C900C1578E /* image_7.jpg in Resources */,
 				1F4CD05F215CD9C900C1578E /* image_2.jpg in Resources */,

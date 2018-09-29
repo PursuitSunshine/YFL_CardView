@@ -12,25 +12,18 @@
 
 /** YFLDragCardView实例的集合 **/
 @property (nonatomic,strong) NSMutableArray <YFLDragCardView *> *cards;
-
 /** 滑动方向 **/
 @property (nonatomic,assign)  ContainerDragDirection direction;
-
 /** 是否滑动 **/
 @property (nonatomic,assign) BOOL isMoveIng;
-
 /** 已加载个数 **/
 @property (nonatomic,assign) NSInteger loadedIndex;
-
 /** 记录第一个card的farme **/
 @property (nonatomic,assign) CGRect firstCardFrame;
-
 /** 记录最后一个card的frame **/
 @property (nonatomic,assign) CGRect lastCardFrame;
-
 /** 记录card的center **/
 @property (nonatomic,assign) CGPoint cardCenter;
-
 /** 记录最后一个card的transform **/
 @property (nonatomic,assign) CGAffineTransform lastCardTransform;
 
@@ -368,6 +361,5 @@
         
     }
 }
-
 
 @end
