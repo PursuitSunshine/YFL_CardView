@@ -67,8 +67,8 @@
 {
     self.imageView.frame = CGRectMake(5, 5, self.frame.size.width-10, self.frame.size.height-50);
     self.title.frame = CGRectMake(0,self.imageView.frame.size.height+5, self.frame.size.width, 30);
-    self.dislike.frame = CGRectMake(16, 16, 75, 75);
-    self.like.frame = CGRectMake(self.frame.size.width-21, 16, 75, 75);
+    self.like.frame = CGRectMake(16, 16, 75, 75);
+    self.dislike.frame = CGRectMake(self.frame.size.width-21-75, 16, 75, 75);
 }
 
 - (void)setImage:(NSString*)imageName title:(NSString*)title
@@ -81,7 +81,7 @@
 - (void)setAnimationwithDriection:(ContainerDragDirection)direction
 {
     if (direction == ContainerDragLeft) {
-        
+
         self.like.alpha = 0.0f;
         [UIView animateWithDuration:0.2f animations:^{
             if (self.dislike) {
@@ -90,7 +90,7 @@
             }
         }];
     }else if(direction == ContainerDragRight){
-        
+
         self.dislike.alpha = 0.0f;
         [UIView animateWithDuration:0.2f animations:^{
             if (self.like) {
@@ -99,7 +99,7 @@
             }
         }];
     }else{
-        
+
         self.like.alpha = 0.0f;
         self.dislike.alpha = 0.0f;
         [UIView animateWithDuration:0.2 animations:^{

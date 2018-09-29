@@ -11,11 +11,13 @@
 #import "CardView.h"
 @interface MainViewController ()<YFLDragCardContainerDataSource,YFLDragCardContainerDelegate>
 
-@property (nonatomic,strong) NSMutableArray *names;
+@property (nonatomic,strong) NSMutableArray <NSString*>*names;
 
-@property (nonatomic,strong) NSMutableArray *titles;
+@property (nonatomic,strong) NSMutableArray <NSString*>*titles;
 
 @property (nonatomic,strong)  YFLDragCardContainer *container;
+
+@property (nonatomic,strong) NSMutableArray <UIButton*>*controllers;
 
 @end
 
@@ -27,8 +29,9 @@
     [super viewDidLoad];
 
     self.title = @"仿探探、陌陌左右滑动";
+    self.controllers = [[NSMutableArray alloc]init];
     
-    self.container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 500)];
+    self.container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 400)];
     self.container .dataSource = self;
     self.container .delegate = self;
     [self.view addSubview:self.container ];
@@ -44,6 +47,20 @@
     }
 
     [self.container reloadData];
+    
+    NSArray *btnImageNames = @[@"finder_dislike_btn",@"finder_like_btn"];
+    NSArray *methodNames = @[@"dislikeAction:",@"likeAction:"];
+    CGFloat originX = (self.view.frame.size.width-75*2-70)/2.0;
+    for (int index = 0;index <  btnImageNames.count; index++) {
+        
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setImage:[UIImage imageNamed:btnImageNames[index]] forState:UIControlStateNormal];
+        [btn addTarget:self action:NSSelectorFromString(methodNames[index]) forControlEvents:UIControlEventTouchUpInside];
+        [self.controllers addObject:btn];
+        [self.view addSubview:btn];
+        btn.frame = CGRectMake(originX+index*(75+70), self.container.frame.origin.y+self.container.frame.size.height+30, 75, 75);
+    }
+    
 }
 
 #pragma mark -  YFLDragCardContainer  DataSource
@@ -52,7 +69,6 @@
     return self.names.count;
 }
 
-
 - (YFLDragCardView *)container:(YFLDragCardContainer *)container viewForRowsAtIndex:(NSInteger)index
 {
     CardView *cardView = [[CardView alloc]initWithFrame:container.bounds];
@@ -60,48 +76,58 @@
     return cardView;
 }
 
-
 #pragma mark -  YFLDragCardContainer  Delegate
 - (void)container:(YFLDragCardContainer *)container didSelectRowAtIndex:(NSInteger)index
 {
     NSLog(@"didSelectRowAtIndex :%ld",(long)index);
 }
 
-
 - (void)container:(YFLDragCardContainer *)container dataSourceIsEmpty:(BOOL)isEmpty
 {
-    NSLog(@"数据已经空了");
-    [container  reloadData];
+    if (isEmpty) {
+        [container  reloadData];
+    }
 }
 
-
-- (void)container:(YFLDragCardContainer *)container willShowCardView:(YFLDragCardView *)cardView
-{
-    NSLog(@"willShowCardViewTag:%ld",cardView.tag);
-}
-
-/**  当前cardview 是否可以拖拽，默认YES **/
 - (BOOL)container:(YFLDragCardContainer *)container canDragForCardView:(YFLDragCardView *)cardView
 {
     return YES;
 }
 
-///** 卡片处于拖拽中回调**/
-//- (void)container:(YFLDragCardContainer *)container dargingForCardView:(YFLDragCardView *)cardView direction:(ContainerDragDirection)direction widthRate:(float)widthRate  heightRate:(float)heightRate
-//{
-//
-//}
-
-/** 卡片拖拽结束回调（卡片消失） **/
-- (void)container:(YFLDragCardContainer *)container dragDidFinshForDirection:(ContainerDragDirection)direction forCardView:(YFLDragCardView *)cardView
+- (void)container:(YFLDragCardContainer *)container dargingForCardView:(YFLDragCardView *)cardView direction:(ContainerDragDirection)direction widthRate:(float)widthRate  heightRate:(float)heightRate
 {
-    NSLog(@" dragDidFinsh:%ld",(long)cardView.tag);
+    CardView*currentShowCardView = (CardView*)cardView;
+    CGFloat scale = 1 + ((boundaryRation > fabs(widthRate) ? fabs(widthRate) : boundaryRation)) / 4;
+    NSString  *scaleString =  [NSString stringWithFormat:@"%.2f",scale];
+    NSNumber *number = [NSNumber numberWithFloat:scaleString.floatValue];
+    direction = [number isEqual:@1] ? ContainerDragDefaults:direction;
+    [currentShowCardView  setAnimationwithDriection:direction];
+ 
 }
 
-#pragma mark - Private Methods
-#pragma mark - Action Methods
-#pragma mark - OverRide Methods
+- (void)container:(YFLDragCardContainer *)container dragDidFinshForDirection:(ContainerDragDirection)direction forCardView:(YFLDragCardView *)cardView
+{
+    NSLog(@"disappear:%ld",(long)cardView.tag);
+}
 
+
+#pragma mark - Action Methods
+- (void)dislikeAction:(UIButton*)sender
+{
+    [self.container removeCardViewForDirection:ContainerDragLeft];
+    CardView *cardView = (CardView *)[self.container getCurrentShowCardView];
+    [cardView setAnimationwithDriection:ContainerDragLeft];
+  
+}
+
+- (void)likeAction:(UIButton*)sender
+{
+    [self.container removeCardViewForDirection:ContainerDragRight];
+    CardView *cardView = (CardView *)[self.container getCurrentShowCardView];
+    [cardView setAnimationwithDriection:ContainerDragRight];
+}
+
+#pragma mark - OverRide Methods
 - (BOOL)prefersStatusBarHidden
 {
     return NO;

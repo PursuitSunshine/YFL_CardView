@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+// 边界比
+static const CGFloat boundaryRation = 0.8f;
+static const CGFloat secondCardScale = 0.95f;
+static const CGFloat thirdCardScale = 0.90f;
+
 typedef NS_ENUM(NSInteger, ContainerDragDirection)
 {
     ContainerDragDefaults,

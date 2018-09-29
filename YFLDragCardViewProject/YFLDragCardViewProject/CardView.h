@@ -10,6 +10,7 @@
 
 @interface CardView : YFLDragCardView
 
+- (void)setAnimationwithDriection:(ContainerDragDirection)direction;
 
 - (void)setImage:(NSString*)imageName title:(NSString*)title;
 
