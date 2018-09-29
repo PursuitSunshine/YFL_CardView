@@ -109,7 +109,7 @@
 - (void)resetLayoutSubviews
 {
     //动画时允许用户交流，比如触摸 | 时间曲线函数，缓入缓出，中间快
-    [UIView animateWithDuration:0.5f delay:0.0f options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.5f delay:0.0f usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveEaseInOut animations:^{
         
         for (int i = 0; i < self.cards.count; i++){
             YFLDragCardView *cardView = [self.cards objectAtIndex:i];
@@ -147,14 +147,22 @@
         }
         
     } completion:^(BOOL finished) {
-        
-        if ([self.delegate respondsToSelector:@selector(container:dataSourceIsEmpty:)]) {
-            
-            [self.delegate container:self
-                   dataSourceIsEmpty:self.cards.count == 0 ? YES : NO];
-        }
+      
+//        if (self.delegate && [self.delegate respondsToSelector:@selector(container:dataSourceIsEmpty:)]) {
+//            
+//            if (self.cards.count == 0) {
+//                
+//                [self.delegate container:self
+//                       dataSourceIsEmpty:YES];
+//                
+//            }
+//            
+//        }
         
     }];
+    
+    
+    
     
 }//布局子视图
 
@@ -269,7 +277,6 @@
     
 }//手势结束
 
-
 #pragma mark - Public Methods
 - (void)reloadData
 {
@@ -320,14 +327,9 @@
     
     if (canEdit) {
         
-        if (pan.state == UIGestureRecognizerStateBegan)
-        {
-            
+        if (pan.state == UIGestureRecognizerStateBegan){
             // TO DO
-            
-            
-        }else if (pan.state == UIGestureRecognizerStateChanged)
-        {
+        }else if (pan.state == UIGestureRecognizerStateChanged){
             
             YFLDragCardView *cardView = (YFLDragCardView *)pan.view;
             //以自身的左上角为原点；每次移动后，原点都置0；计算的是相对于上一个位置的偏移；
@@ -356,10 +358,7 @@
                 
                 [self.delegate container:self dargingForCardView:cardView direction:self.direction widthRate:horizionSliderRate heightRate:verticalSliderRate];
             }
-           
-            
-        }else if (pan.state == UIGestureRecognizerStateEnded || pan.state == UIGestureRecognizerStateEnded)
-        {
+        }else if (pan.state == UIGestureRecognizerStateEnded || pan.state == UIGestureRecognizerStateEnded){
             //还原，或者消失
             float horizionSliderRate = (pan.view.center.x-self.cardCenter.x)/self.cardCenter.x;
             float moveY = (pan.view.center.y-self.cardCenter.y);

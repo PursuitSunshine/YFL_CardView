@@ -8,7 +8,14 @@
 
 #import "MainViewController.h"
 #import "YFLDragCardContainer.h"
-@interface MainViewController ()<YFLDragCardContainerDataSource>
+#import "CardView.h"
+@interface MainViewController ()<YFLDragCardContainerDataSource,YFLDragCardContainerDelegate>
+
+@property (nonatomic,strong) NSMutableArray *names;
+
+@property (nonatomic,strong) NSMutableArray *titles;
+
+@property (nonatomic,strong)  YFLDragCardContainer *container;
 
 @end
 
@@ -21,24 +28,74 @@
 
     self.title = @"仿探探、陌陌左右滑动";
     
-    YFLDragCardContainer *container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 500)];
-    container.dataSource = self;
-    [self.view addSubview:container];
-    [container reloadData];
+    self.container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 500)];
+    self.container .dataSource = self;
+    self.container .delegate = self;
+    [self.view addSubview:self.container ];
+    
+    self.names = [[NSMutableArray alloc]init];
+    self.titles = [[NSMutableArray alloc]init];
+    
+    for (int i = 1; i < 9; i++) {
+        
+        [self.names addObject:[NSString stringWithFormat:@"image_%d.jpg",i]];
+        [self.titles addObject:[NSString stringWithFormat:@"Page %d",i]];
+        
+    }
 
-
+    [self.container reloadData];
 }
 
+#pragma mark -  YFLDragCardContainer  DataSource
 - (NSInteger)numberOfRowsInYFLDragCardContainer:(YFLDragCardContainer *)container
 {
-    return 30;
+    return self.names.count;
 }
 
-/** 显示数据源 **/
+
 - (YFLDragCardView *)container:(YFLDragCardContainer *)container viewForRowsAtIndex:(NSInteger)index
 {
-    YFLDragCardView *cardView = [[YFLDragCardView alloc]initWithFrame:container.bounds];
+    CardView *cardView = [[CardView alloc]initWithFrame:container.bounds];
+    [cardView setImage:self.names[index] title:self.titles[index]];
     return cardView;
+}
+
+
+#pragma mark -  YFLDragCardContainer  Delegate
+- (void)container:(YFLDragCardContainer *)container didSelectRowAtIndex:(NSInteger)index
+{
+    NSLog(@"didSelectRowAtIndex :%ld",(long)index);
+}
+
+
+- (void)container:(YFLDragCardContainer *)container dataSourceIsEmpty:(BOOL)isEmpty
+{
+    NSLog(@"数据已经空了");
+    [container  reloadData];
+}
+
+
+- (void)container:(YFLDragCardContainer *)container willShowCardView:(YFLDragCardView *)cardView
+{
+    NSLog(@"willShowCardViewTag:%ld",cardView.tag);
+}
+
+/**  当前cardview 是否可以拖拽，默认YES **/
+- (BOOL)container:(YFLDragCardContainer *)container canDragForCardView:(YFLDragCardView *)cardView
+{
+    return YES;
+}
+
+///** 卡片处于拖拽中回调**/
+//- (void)container:(YFLDragCardContainer *)container dargingForCardView:(YFLDragCardView *)cardView direction:(ContainerDragDirection)direction widthRate:(float)widthRate  heightRate:(float)heightRate
+//{
+//
+//}
+
+/** 卡片拖拽结束回调（卡片消失） **/
+- (void)container:(YFLDragCardContainer *)container dragDidFinshForDirection:(ContainerDragDirection)direction forCardView:(YFLDragCardView *)cardView
+{
+    NSLog(@" dragDidFinsh:%ld",(long)cardView.tag);
 }
 
 #pragma mark - Private Methods

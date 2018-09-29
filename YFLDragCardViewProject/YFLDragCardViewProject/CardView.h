@@ -10,4 +10,7 @@
 
 @interface CardView : YFLDragCardView
 
+
+- (void)setImage:(NSString*)imageName title:(NSString*)title;
+
 @end

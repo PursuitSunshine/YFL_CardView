@@ -32,9 +32,6 @@
 /** 拖到最后一张卡片 YES，空，可继续调用reloadData分页数据**/
 - (void)container:(YFLDragCardContainer *)container dataSourceIsEmpty:(BOOL)isEmpty;
 
-/** 即将展示的cardview **/
-- (void)container:(YFLDragCardContainer *)container willShowCardView:(YFLDragCardView *)cardView;
-
 /**  当前cardview 是否可以拖拽，默认YES **/
 - (BOOL)container:(YFLDragCardContainer *)container canDragForCardView:(YFLDragCardView *)cardView;
 
