@@ -34,7 +34,7 @@
     self.container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 400)];
     self.container .dataSource = self;
     self.container .delegate = self;
-    [self.view addSubview:self.container ];
+    [self.view addSubview:self.container];
     
     self.names = [[NSMutableArray alloc]init];
     self.titles = [[NSMutableArray alloc]init];
