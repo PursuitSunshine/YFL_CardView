@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F18044F2160809F00F262F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F18044E2160809F00F262F2 /* AppDelegate.m */; };
+		1F180457216080A400F262F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F180456216080A400F262F2 /* Assets.xcassets */; };
+		1F18045A216080A400F262F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F180458216080A400F262F2 /* LaunchScreen.storyboard */; };
+		1F18045D216080A400F262F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F18045C216080A400F262F2 /* main.m */; };
+		1F180467216080A400F262F2 /* YFLDragCardViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F180466216080A400F262F2 /* YFLDragCardViewTests.m */; };
+		1F180472216080A400F262F2 /* YFLDragCardViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F180471216080A400F262F2 /* YFLDragCardViewUITests.m */; };
+		1F180481216080FD00F262F2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F180480216080FC00F262F2 /* MainViewController.m */; };
+		1F1804892160812300F262F2 /* YFLDragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804842160812300F262F2 /* YFLDragCardView.m */; };
+		1F18048A2160812300F262F2 /* YFLDragConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804862160812300F262F2 /* YFLDragConfigure.m */; };
+		1F18048B2160812300F262F2 /* YFLDragCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804882160812300F262F2 /* YFLDragCardContainer.m */; };
+		1F1804962160813600F262F2 /* image_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F18048D2160813600F262F2 /* image_7.jpg */; };
+		1F1804972160813600F262F2 /* image_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F18048E2160813600F262F2 /* image_9.jpg */; };
+		1F1804982160813600F262F2 /* image_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F18048F2160813600F262F2 /* image_8.jpg */; };
+		1F1804992160813600F262F2 /* image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804902160813600F262F2 /* image_4.jpg */; };
+		1F18049A2160813600F262F2 /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804912160813600F262F2 /* image_1.jpg */; };
+		1F18049B2160813600F262F2 /* image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804922160813600F262F2 /* image_3.jpg */; };
+		1F18049C2160813600F262F2 /* image_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804932160813600F262F2 /* image_5.jpg */; };
+		1F18049D2160813600F262F2 /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804942160813600F262F2 /* image_6.jpg */; };
+		1F18049E2160813600F262F2 /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804952160813600F262F2 /* image_2.jpg */; };
+		1F1804A12160814700F262F2 /* IMG_3694.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804A02160814700F262F2 /* IMG_3694.GIF */; };
+		1F1804A42160815700F262F2 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804A32160815700F262F2 /* CardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F180463216080A400F262F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1804422160809F00F262F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1804492160809F00F262F2;
+			remoteInfo = YFLDragCardView;
+		};
+		1F18046E216080A400F262F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1804422160809F00F262F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1804492160809F00F262F2;
+			remoteInfo = YFLDragCardView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F18044A2160809F00F262F2 /* YFLDragCardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLDragCardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F18044D2160809F00F262F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F18044E2160809F00F262F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F180456216080A400F262F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F180459216080A400F262F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F18045B216080A400F262F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F18045C216080A400F262F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F180462216080A400F262F2 /* YFLDragCardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLDragCardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F180466216080A400F262F2 /* YFLDragCardViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardViewTests.m; sourceTree = "<group>"; };
+		1F180468216080A400F262F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F18046D216080A400F262F2 /* YFLDragCardViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLDragCardViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F180471216080A400F262F2 /* YFLDragCardViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardViewUITests.m; sourceTree = "<group>"; };
+		1F180473216080A400F262F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F18047F216080FC00F262F2 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1F180480216080FC00F262F2 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1F1804832160812300F262F2 /* YFLDragConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragConfigure.h; sourceTree = "<group>"; };
+		1F1804842160812300F262F2 /* YFLDragCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardView.m; sourceTree = "<group>"; };
+		1F1804852160812300F262F2 /* YFLDragCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardView.h; sourceTree = "<group>"; };
+		1F1804862160812300F262F2 /* YFLDragConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragConfigure.m; sourceTree = "<group>"; };
+		1F1804872160812300F262F2 /* YFLDragCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardContainer.h; sourceTree = "<group>"; };
+		1F1804882160812300F262F2 /* YFLDragCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardContainer.m; sourceTree = "<group>"; };
+		1F18048D2160813600F262F2 /* image_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_7.jpg; sourceTree = "<group>"; };
+		1F18048E2160813600F262F2 /* image_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_9.jpg; sourceTree = "<group>"; };
+		1F18048F2160813600F262F2 /* image_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_8.jpg; sourceTree = "<group>"; };
+		1F1804902160813600F262F2 /* image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_4.jpg; sourceTree = "<group>"; };
+		1F1804912160813600F262F2 /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
+		1F1804922160813600F262F2 /* image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_3.jpg; sourceTree = "<group>"; };
+		1F1804932160813600F262F2 /* image_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_5.jpg; sourceTree = "<group>"; };
+		1F1804942160813600F262F2 /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpg; sourceTree = "<group>"; };
+		1F1804952160813600F262F2 /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
+		1F1804A02160814700F262F2 /* IMG_3694.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_3694.GIF; sourceTree = "<group>"; };
+		1F1804A22160815700F262F2 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		1F1804A32160815700F262F2 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F1804472160809F00F262F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F18045F216080A400F262F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F18046A216080A400F262F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F1804412160809F00F262F2 = {
+			isa = PBXGroup;
+			children = (
+				1F18044C2160809F00F262F2 /* YFLDragCardView */,
+				1F180465216080A400F262F2 /* YFLDragCardViewTests */,
+				1F180470216080A400F262F2 /* YFLDragCardViewUITests */,
+				1F18044B2160809F00F262F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F18044B2160809F00F262F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F18044A2160809F00F262F2 /* YFLDragCardView.app */,
+				1F180462216080A400F262F2 /* YFLDragCardViewTests.xctest */,
+				1F18046D216080A400F262F2 /* YFLDragCardViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F18044C2160809F00F262F2 /* YFLDragCardView */ = {
+			isa = PBXGroup;
+			children = (
+				1F18049F2160813D00F262F2 /* screensShots */,
+				1F18048C2160812700F262F2 /* resource */,
+				1F1804822160811600F262F2 /* Lib */,
+				1F18044D2160809F00F262F2 /* AppDelegate.h */,
+				1F18044E2160809F00F262F2 /* AppDelegate.m */,
+				1F18047F216080FC00F262F2 /* MainViewController.h */,
+				1F180480216080FC00F262F2 /* MainViewController.m */,
+				1F1804A22160815700F262F2 /* CardView.h */,
+				1F1804A32160815700F262F2 /* CardView.m */,
+				1F180456216080A400F262F2 /* Assets.xcassets */,
+				1F180458216080A400F262F2 /* LaunchScreen.storyboard */,
+				1F18045B216080A400F262F2 /* Info.plist */,
+				1F18045C216080A400F262F2 /* main.m */,
+			);
+			path = YFLDragCardView;
+			sourceTree = "<group>";
+		};
+		1F180465216080A400F262F2 /* YFLDragCardViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F180466216080A400F262F2 /* YFLDragCardViewTests.m */,
+				1F180468216080A400F262F2 /* Info.plist */,
+			);
+			path = YFLDragCardViewTests;
+			sourceTree = "<group>";
+		};
+		1F180470216080A400F262F2 /* YFLDragCardViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F180471216080A400F262F2 /* YFLDragCardViewUITests.m */,
+				1F180473216080A400F262F2 /* Info.plist */,
+			);
+			path = YFLDragCardViewUITests;
+			sourceTree = "<group>";
+		};
+		1F1804822160811600F262F2 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1F1804872160812300F262F2 /* YFLDragCardContainer.h */,
+				1F1804882160812300F262F2 /* YFLDragCardContainer.m */,
+				1F1804852160812300F262F2 /* YFLDragCardView.h */,
+				1F1804842160812300F262F2 /* YFLDragCardView.m */,
+				1F1804832160812300F262F2 /* YFLDragConfigure.h */,
+				1F1804862160812300F262F2 /* YFLDragConfigure.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		1F18048C2160812700F262F2 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				1F1804912160813600F262F2 /* image_1.jpg */,
+				1F1804952160813600F262F2 /* image_2.jpg */,
+				1F1804922160813600F262F2 /* image_3.jpg */,
+				1F1804902160813600F262F2 /* image_4.jpg */,
+				1F1804932160813600F262F2 /* image_5.jpg */,
+				1F1804942160813600F262F2 /* image_6.jpg */,
+				1F18048D2160813600F262F2 /* image_7.jpg */,
+				1F18048F2160813600F262F2 /* image_8.jpg */,
+				1F18048E2160813600F262F2 /* image_9.jpg */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		1F18049F2160813D00F262F2 /* screensShots */ = {
+			isa = PBXGroup;
+			children = (
+				1F1804A02160814700F262F2 /* IMG_3694.GIF */,
+			);
+			path = screensShots;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F1804492160809F00F262F2 /* YFLDragCardView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F180476216080A400F262F2 /* Build configuration list for PBXNativeTarget "YFLDragCardView" */;
+			buildPhases = (
+				1F1804462160809F00F262F2 /* Sources */,
+				1F1804472160809F00F262F2 /* Frameworks */,
+				1F1804482160809F00F262F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YFLDragCardView;
+			productName = YFLDragCardView;
+			productReference = 1F18044A2160809F00F262F2 /* YFLDragCardView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F180461216080A400F262F2 /* YFLDragCardViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F180479216080A400F262F2 /* Build configuration list for PBXNativeTarget "YFLDragCardViewTests" */;
+			buildPhases = (
+				1F18045E216080A400F262F2 /* Sources */,
+				1F18045F216080A400F262F2 /* Frameworks */,
+				1F180460216080A400F262F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F180464216080A400F262F2 /* PBXTargetDependency */,
+			);
+			name = YFLDragCardViewTests;
+			productName = YFLDragCardViewTests;
+			productReference = 1F180462216080A400F262F2 /* YFLDragCardViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F18046C216080A400F262F2 /* YFLDragCardViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F18047C216080A400F262F2 /* Build configuration list for PBXNativeTarget "YFLDragCardViewUITests" */;
+			buildPhases = (
+				1F180469216080A400F262F2 /* Sources */,
+				1F18046A216080A400F262F2 /* Frameworks */,
+				1F18046B216080A400F262F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F18046F216080A400F262F2 /* PBXTargetDependency */,
+			);
+			name = YFLDragCardViewUITests;
+			productName = YFLDragCardViewUITests;
+			productReference = 1F18046D216080A400F262F2 /* YFLDragCardViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F1804422160809F00F262F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Cherish;
+				TargetAttributes = {
+					1F1804492160809F00F262F2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					1F180461216080A400F262F2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 1F1804492160809F00F262F2;
+					};
+					1F18046C216080A400F262F2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 1F1804492160809F00F262F2;
+					};
+				};
+			};
+			buildConfigurationList = 1F1804452160809F00F262F2 /* Build configuration list for PBXProject "YFLDragCardView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F1804412160809F00F262F2;
+			productRefGroup = 1F18044B2160809F00F262F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F1804492160809F00F262F2 /* YFLDragCardView */,
+				1F180461216080A400F262F2 /* YFLDragCardViewTests */,
+				1F18046C216080A400F262F2 /* YFLDragCardViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F1804482160809F00F262F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F18049E2160813600F262F2 /* image_2.jpg in Resources */,
+				1F18049D2160813600F262F2 /* image_6.jpg in Resources */,
+				1F1804A12160814700F262F2 /* IMG_3694.GIF in Resources */,
+				1F18045A216080A400F262F2 /* LaunchScreen.storyboard in Resources */,
+				1F1804972160813600F262F2 /* image_9.jpg in Resources */,
+				1F1804992160813600F262F2 /* image_4.jpg in Resources */,
+				1F180457216080A400F262F2 /* Assets.xcassets in Resources */,
+				1F1804982160813600F262F2 /* image_8.jpg in Resources */,
+				1F1804962160813600F262F2 /* image_7.jpg in Resources */,
+				1F18049A2160813600F262F2 /* image_1.jpg in Resources */,
+				1F18049B2160813600F262F2 /* image_3.jpg in Resources */,
+				1F18049C2160813600F262F2 /* image_5.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F180460216080A400F262F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F18046B216080A400F262F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F1804462160809F00F262F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F18045D216080A400F262F2 /* main.m in Sources */,
+				1F18048B2160812300F262F2 /* YFLDragCardContainer.m in Sources */,
+				1F180481216080FD00F262F2 /* MainViewController.m in Sources */,
+				1F1804892160812300F262F2 /* YFLDragCardView.m in Sources */,
+				1F18048A2160812300F262F2 /* YFLDragConfigure.m in Sources */,
+				1F18044F2160809F00F262F2 /* AppDelegate.m in Sources */,
+				1F1804A42160815700F262F2 /* CardView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F18045E216080A400F262F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F180467216080A400F262F2 /* YFLDragCardViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F180469216080A400F262F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F180472216080A400F262F2 /* YFLDragCardViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F180464216080A400F262F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1804492160809F00F262F2 /* YFLDragCardView */;
+			targetProxy = 1F180463216080A400F262F2 /* PBXContainerItemProxy */;
+		};
+		1F18046F216080A400F262F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1804492160809F00F262F2 /* YFLDragCardView */;
+			targetProxy = 1F18046E216080A400F262F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F180458216080A400F262F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F180459216080A400F262F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F180474216080A400F262F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F180475216080A400F262F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F180477216080A400F262F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9V7FM4SGX;
+				INFOPLIST_FILE = YFLDragCardView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.YFLDragCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1F180478216080A400F262F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9V7FM4SGX;
+				INFOPLIST_FILE = YFLDragCardView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.YFLDragCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1F18047A216080A400F262F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YFLDragCardViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.YFLDragCardViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YFLDragCardView.app/YFLDragCardView";
+			};
+			name = Debug;
+		};
+		1F18047B216080A400F262F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YFLDragCardViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.YFLDragCardViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YFLDragCardView.app/YFLDragCardView";
+			};
+			name = Release;
+		};
+		1F18047D216080A400F262F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YFLDragCardViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.YFLDragCardViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YFLDragCardView;
+			};
+			name = Debug;
+		};
+		1F18047E216080A400F262F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YFLDragCardViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.YFLDragCardViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YFLDragCardView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F1804452160809F00F262F2 /* Build configuration list for PBXProject "YFLDragCardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F180474216080A400F262F2 /* Debug */,
+				1F180475216080A400F262F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F180476216080A400F262F2 /* Build configuration list for PBXNativeTarget "YFLDragCardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F180477216080A400F262F2 /* Debug */,
+				1F180478216080A400F262F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F180479216080A400F262F2 /* Build configuration list for PBXNativeTarget "YFLDragCardViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F18047A216080A400F262F2 /* Debug */,
+				1F18047B216080A400F262F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F18047C216080A400F262F2 /* Build configuration list for PBXNativeTarget "YFLDragCardViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F18047D216080A400F262F2 /* Debug */,
+				1F18047E216080A400F262F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F1804422160809F00F262F2 /* Project object */;
+}
