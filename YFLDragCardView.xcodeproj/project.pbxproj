@@ -131,9 +131,9 @@
 		1F18044C2160809F00F262F2 /* YFLDragCardView */ = {
 			isa = PBXGroup;
 			children = (
+				1F1804B62160A60E00F262F2 /* screensShots */,
 				1F1804AC2160A4B900F262F2 /* Lib */,
 				1F1804A92160A38A00F262F2 /* resource */,
-				1F1804A62160A35800F262F2 /* screensShots */,
 				1F18044D2160809F00F262F2 /* AppDelegate.h */,
 				1F18044E2160809F00F262F2 /* AppDelegate.m */,
 				1F18047F216080FC00F262F2 /* MainViewController.h */,
@@ -166,14 +166,6 @@
 			path = YFLDragCardViewUITests;
 			sourceTree = "<group>";
 		};
-		1F1804A62160A35800F262F2 /* screensShots */ = {
-			isa = PBXGroup;
-			children = (
-				1F1804A02160814700F262F2 /* IMG_3694.GIF */,
-			);
-			name = screensShots;
-			sourceTree = "<group>";
-		};
 		1F1804A92160A38A00F262F2 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +193,14 @@
 				1F1804B22160A4BA00F262F2 /* YFLDragConfigure.h */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		1F1804B62160A60E00F262F2 /* screensShots */ = {
+			isa = PBXGroup;
+			children = (
+				1F1804A02160814700F262F2 /* IMG_3694.GIF */,
+			);
+			path = screensShots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
