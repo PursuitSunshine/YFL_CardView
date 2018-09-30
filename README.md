@@ -13,15 +13,15 @@
     configure.cardCornerBorderWidth = 0.45f;
     configure.cardBordColor = [UIColor colorWithRed:176.0f/255.0f green:176.0f/255.0f blue:176.0f/255.0f alpha:1];
     self.container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 400) configure:configure];
-    self.container .dataSource = self;
-    self.container .delegate = self;
+    self.container.dataSource = self;
+    self.container.delegate = self;
     [self.view addSubview:self.container];
     [self.container reloadData];
     
     或者默认初始化方法
     self.container = [[YFLDragCardContainer alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, 400)];
-    self.container .dataSource = self;
-    self.container .delegate = self;
+    self.container.dataSource = self;
+    self.container.delegate = self;
     [self.view addSubview:self.container];
     [self.container reloadData];
     
