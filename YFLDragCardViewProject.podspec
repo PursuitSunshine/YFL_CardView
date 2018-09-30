@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/CoderYangFeiLong/YFL_CardView"
   s.license      = "MIT"
   s.author       = {"Cherish" => "390151825@qq.com" }
-  s.platform     = ios,"8.0"
+  s.platform     = :ios,"8.0"
   s.source       = {:git => "https://github.com/CoderYangFeiLong/YFL_CardView.git", :tag => "0.0.1" }
   s.source_files  = "YFLDragCardViewProject/Lib/*.{h,m}"
   s.requires_arc = true
