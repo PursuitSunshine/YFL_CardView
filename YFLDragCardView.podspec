@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/CoderYangFeiLong/YFL_CardView.git", :tag => "0.0.1" }
   s.source_files  = "YFLDragCardView/Lib/**/*.{h,m}"
+
    s.requires_arc = true
 
 end
