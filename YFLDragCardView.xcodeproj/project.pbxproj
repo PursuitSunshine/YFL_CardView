@@ -14,9 +14,6 @@
 		1F180467216080A400F262F2 /* YFLDragCardViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F180466216080A400F262F2 /* YFLDragCardViewTests.m */; };
 		1F180472216080A400F262F2 /* YFLDragCardViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F180471216080A400F262F2 /* YFLDragCardViewUITests.m */; };
 		1F180481216080FD00F262F2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F180480216080FC00F262F2 /* MainViewController.m */; };
-		1F1804892160812300F262F2 /* YFLDragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804842160812300F262F2 /* YFLDragCardView.m */; };
-		1F18048A2160812300F262F2 /* YFLDragConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804862160812300F262F2 /* YFLDragConfigure.m */; };
-		1F18048B2160812300F262F2 /* YFLDragCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804882160812300F262F2 /* YFLDragCardContainer.m */; };
 		1F1804962160813600F262F2 /* image_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F18048D2160813600F262F2 /* image_7.jpg */; };
 		1F1804972160813600F262F2 /* image_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F18048E2160813600F262F2 /* image_9.jpg */; };
 		1F1804982160813600F262F2 /* image_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F18048F2160813600F262F2 /* image_8.jpg */; };
@@ -28,6 +25,9 @@
 		1F18049E2160813600F262F2 /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804952160813600F262F2 /* image_2.jpg */; };
 		1F1804A12160814700F262F2 /* IMG_3694.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 1F1804A02160814700F262F2 /* IMG_3694.GIF */; };
 		1F1804A42160815700F262F2 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804A32160815700F262F2 /* CardView.m */; };
+		1F1804B32160A4BA00F262F2 /* YFLDragCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804AD2160A4BA00F262F2 /* YFLDragCardContainer.m */; };
+		1F1804B42160A4BA00F262F2 /* YFLDragConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804AF2160A4BA00F262F2 /* YFLDragConfigure.m */; };
+		1F1804B52160A4BA00F262F2 /* YFLDragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1804B12160A4BA00F262F2 /* YFLDragCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +63,6 @@
 		1F180473216080A400F262F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F18047F216080FC00F262F2 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1F180480216080FC00F262F2 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		1F1804832160812300F262F2 /* YFLDragConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragConfigure.h; sourceTree = "<group>"; };
-		1F1804842160812300F262F2 /* YFLDragCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardView.m; sourceTree = "<group>"; };
-		1F1804852160812300F262F2 /* YFLDragCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardView.h; sourceTree = "<group>"; };
-		1F1804862160812300F262F2 /* YFLDragConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragConfigure.m; sourceTree = "<group>"; };
-		1F1804872160812300F262F2 /* YFLDragCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardContainer.h; sourceTree = "<group>"; };
-		1F1804882160812300F262F2 /* YFLDragCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardContainer.m; sourceTree = "<group>"; };
 		1F18048D2160813600F262F2 /* image_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_7.jpg; sourceTree = "<group>"; };
 		1F18048E2160813600F262F2 /* image_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_9.jpg; sourceTree = "<group>"; };
 		1F18048F2160813600F262F2 /* image_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_8.jpg; sourceTree = "<group>"; };
@@ -81,6 +75,12 @@
 		1F1804A02160814700F262F2 /* IMG_3694.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IMG_3694.GIF; sourceTree = "<group>"; };
 		1F1804A22160815700F262F2 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
 		1F1804A32160815700F262F2 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		1F1804AD2160A4BA00F262F2 /* YFLDragCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardContainer.m; sourceTree = "<group>"; };
+		1F1804AE2160A4BA00F262F2 /* YFLDragCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardView.h; sourceTree = "<group>"; };
+		1F1804AF2160A4BA00F262F2 /* YFLDragConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragConfigure.m; sourceTree = "<group>"; };
+		1F1804B02160A4BA00F262F2 /* YFLDragCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragCardContainer.h; sourceTree = "<group>"; };
+		1F1804B12160A4BA00F262F2 /* YFLDragCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLDragCardView.m; sourceTree = "<group>"; };
+		1F1804B22160A4BA00F262F2 /* YFLDragConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLDragConfigure.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +131,9 @@
 		1F18044C2160809F00F262F2 /* YFLDragCardView */ = {
 			isa = PBXGroup;
 			children = (
+				1F1804AC2160A4B900F262F2 /* Lib */,
 				1F1804A92160A38A00F262F2 /* resource */,
 				1F1804A62160A35800F262F2 /* screensShots */,
-				1F1804A52160A34500F262F2 /* Lib */,
 				1F18044D2160809F00F262F2 /* AppDelegate.h */,
 				1F18044E2160809F00F262F2 /* AppDelegate.m */,
 				1F18047F216080FC00F262F2 /* MainViewController.h */,
@@ -166,19 +166,6 @@
 			path = YFLDragCardViewUITests;
 			sourceTree = "<group>";
 		};
-		1F1804A52160A34500F262F2 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				1F1804872160812300F262F2 /* YFLDragCardContainer.h */,
-				1F1804882160812300F262F2 /* YFLDragCardContainer.m */,
-				1F1804852160812300F262F2 /* YFLDragCardView.h */,
-				1F1804842160812300F262F2 /* YFLDragCardView.m */,
-				1F1804832160812300F262F2 /* YFLDragConfigure.h */,
-				1F1804862160812300F262F2 /* YFLDragConfigure.m */,
-			);
-			name = Lib;
-			sourceTree = "<group>";
-		};
 		1F1804A62160A35800F262F2 /* screensShots */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +188,19 @@
 				1F18048E2160813600F262F2 /* image_9.jpg */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		1F1804AC2160A4B900F262F2 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1F1804AD2160A4BA00F262F2 /* YFLDragCardContainer.m */,
+				1F1804AE2160A4BA00F262F2 /* YFLDragCardView.h */,
+				1F1804AF2160A4BA00F262F2 /* YFLDragConfigure.m */,
+				1F1804B02160A4BA00F262F2 /* YFLDragCardContainer.h */,
+				1F1804B12160A4BA00F262F2 /* YFLDragCardView.m */,
+				1F1804B22160A4BA00F262F2 /* YFLDragConfigure.h */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,13 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1804B42160A4BA00F262F2 /* YFLDragConfigure.m in Sources */,
+				1F1804B32160A4BA00F262F2 /* YFLDragCardContainer.m in Sources */,
 				1F18045D216080A400F262F2 /* main.m in Sources */,
-				1F18048B2160812300F262F2 /* YFLDragCardContainer.m in Sources */,
 				1F180481216080FD00F262F2 /* MainViewController.m in Sources */,
-				1F1804892160812300F262F2 /* YFLDragCardView.m in Sources */,
-				1F18048A2160812300F262F2 /* YFLDragConfigure.m in Sources */,
 				1F18044F2160809F00F262F2 /* AppDelegate.m in Sources */,
 				1F1804A42160815700F262F2 /* CardView.m in Sources */,
+				1F1804B52160A4BA00F262F2 /* YFLDragCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
