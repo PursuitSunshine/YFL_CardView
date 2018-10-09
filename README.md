@@ -40,21 +40,30 @@
     - (void)container:(YFLDragCardContainer *)container didSelectRowAtIndex:(NSInteger)index
     {
         NSLog(@"didSelectRowAtIndex :%ld",(long)index);
-    }
+        
+    }//点击事件
+    
     - (void)container:(YFLDragCardContainer *)container dataSourceIsEmpty:(BOOL)isEmpty
     {
        // TO  DO
-    }
+       
+    }// isEmpty=YES,数据源为空
+    
     - (BOOL)container:(YFLDragCardContainer *)container canDragForCardView:(YFLDragCardView *)cardView
     {
        return YES;
-    }
+       
+    }// 卡牌是否支持编辑
+    
     - (void)container:(YFLDragCardContainer *)container dargingForCardView:(YFLDragCardView *)cardView direction:(ContainerDragDirection)direction widthRate:(float)widthRate  heightRate:(float)heightRate
     {
       // TO DO
-    }
+      
+    }//正在手势中
+    
     - (void)container:(YFLDragCardContainer *)container dragDidFinshForDirection:(ContainerDragDirection)direction forCardView:(YFLDragCardView *)cardView
     {
         NSLog(@"disappear:%ld",(long)cardView.tag);
-    }
+        
+    }// disappear=YES,滑动结束
     
