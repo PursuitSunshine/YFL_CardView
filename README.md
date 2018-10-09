@@ -30,11 +30,14 @@
     - (NSInteger)numberOfRowsInYFLDragCardContainer:(YFLDragCardContainer *)container
     {
        return self.data.count;
-    }
+       
+    }// 多少张卡牌
+    
     - (YFLDragCardView *)container:(YFLDragCardContainer *)container viewForRowsAtIndex:(NSInteger)index
     { 
        return [YFLDragCardView new];
-    }
+       
+    }// 自定义卡牌样式（返回YFLDragCardView子类对象即可）
     
   # 代理方法
     - (void)container:(YFLDragCardContainer *)container didSelectRowAtIndex:(NSInteger)index
