@@ -1,5 +1,5 @@
 # 仿探探、陌陌社交左右滑动找好友，效果图如下
-![image](https://raw.githubusercontent.com/CoderYangFeiLong/YFL_CardView/master/YFLDragCardViewProject/YFLDragCardViewProject/resource//IMG_3694.GIF)
+![image](https://raw.githubusercontent.com/CoderYangFeiLong/YFL_CardView/master/YFLDragCardView/screensShots/IMG_3694.GIF)
 
 # 自定义说明
   支持自定义卡牌样式，继承YFLDragCardView类，并重写- (void)YFLDragCardViewLayoutSubviews 方法，在该方法里布局子视图即可。
