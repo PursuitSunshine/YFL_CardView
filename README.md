@@ -75,3 +75,6 @@
         
     }// disappear=YES,滑动结束
     
+# 联系方式
+. Email :  1342337848@qq.com
+. Blog  : http://blog.csdn.net/qq_18505715 
