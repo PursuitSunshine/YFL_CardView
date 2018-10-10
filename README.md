@@ -4,6 +4,10 @@
 # 自定义说明
   支持自定义卡牌样式，继承YFLDragCardView类，并重写- (void)YFLDragCardViewLayoutSubviews 方法，在该方法里布局子视图即可。
 
+# 安装说明
+  支持cocoapods， pod 'YFLDragCardView', '~> 1.0.0'
+  也可手动导入工程Lib目录下源代码文件
+
 # 示例代码
     YFLDragConfigure *configure = [[YFLDragConfigure alloc]init];
     configure.visableCount = 3;
