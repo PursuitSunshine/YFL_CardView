@@ -1,4 +1,4 @@
-# 仿探探、陌陌社交左右滑动找好友，效果图如下
+# 仿探探、陌陌社交软件左右滑动找好友，效果图如下
 ![image](https://raw.githubusercontent.com/CoderYangFeiLong/YFL_CardView/master/YFLDragCardView/screensShots/IMG_3694.GIF)
 
 # 自定义说明
@@ -74,7 +74,11 @@
         NSLog(@"disappear:%ld",(long)cardView.tag);
         
     }// disappear=YES,滑动结束
-    
+
+# 点击事件
+ 
+    - (void)removeCardViewForDirection:(ContainerDragDirection)direction
+
 # 联系方式
 
 Email : 1342337848@qq.com
