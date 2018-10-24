@@ -10,6 +10,7 @@
   也可手动导入工程Lib目录下源代码文件
 
 # 示例代码
+```
     YFLDragConfigure *configure = [[YFLDragConfigure alloc]init];
     configure.visableCount = 3;
     configure.containerEdge = 10.0f;
@@ -29,9 +30,10 @@
     self.container.delegate = self;
     [self.view addSubview:self.container];
     [self.container reloadData];
-    
+```    
 
 # 数据源方法
+```
     - (NSInteger)numberOfRowsInYFLDragCardContainer:(YFLDragCardContainer *)container
     {
        return self.data.count;
@@ -43,8 +45,9 @@
        return [YFLDragCardView new];
        
     }// 自定义卡牌样式（返回YFLDragCardView子类对象即可）
-    
+  ```  
   # 代理方法
+  ```
     - (void)container:(YFLDragCardContainer *)container didSelectRowAtIndex:(NSInteger)index
     {
         NSLog(@"didSelectRowAtIndex :%ld",(long)index);
@@ -74,11 +77,11 @@
         NSLog(@"disappear:%ld",(long)cardView.tag);
         
     }// disappear=YES,滑动结束
-
+```
 # 点击事件
- 
+``` 
     - (void)removeCardViewForDirection:(ContainerDragDirection)direction
-
+```
 # 联系方式
 
 Email : 1342337848@qq.com
