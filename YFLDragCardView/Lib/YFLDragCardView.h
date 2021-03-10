@@ -13,7 +13,6 @@
 
 @property (nonatomic,assign) CGAffineTransform originTransForm;
 
-
 @property (nonatomic,strong) YFLDragConfigure *configure;
 
 /**

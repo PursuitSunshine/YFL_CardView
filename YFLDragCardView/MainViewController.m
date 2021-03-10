@@ -40,10 +40,8 @@
     self.titles = [[NSMutableArray alloc]init];
     
     for (int i = 1; i < 9; i++) {
-        
         [self.names addObject:[NSString stringWithFormat:@"image_%d.jpg",i]];
         [self.titles addObject:[NSString stringWithFormat:@"Page %d",i]];
-        
     }
     
     [self.container reloadData];
@@ -52,7 +50,6 @@
     NSArray *methodNames = @[@"dislikeAction:",@"likeAction:"];
     CGFloat originX = (self.view.frame.size.width-75*2-70)/2.0;
     for (int index = 0;index <  btnImageNames.count; index++) {
-        
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setImage:[UIImage imageNamed:btnImageNames[index]] forState:UIControlStateNormal];
         [btn addTarget:self action:NSSelectorFromString(methodNames[index]) forControlEvents:UIControlEventTouchUpInside];

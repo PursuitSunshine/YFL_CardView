@@ -82,11 +82,9 @@
     NSInteger sum = [self.dataSource numberOfRowsInYFLDragCardContainer:self];
     NSInteger preLoadViewCount = (sum <= self.configure.visableCount) ? sum : self.configure.visableCount;
     //预防越界
-    if (self.loadedIndex <  sum)
-    {
+    if (self.loadedIndex <  sum){
         // 当手势滑动，加载第四个，最多创建4个。不存在内存warning。(手势停止，滑动的view没消失，需要干掉多创建的+1)
-        for (NSInteger i = self.cards.count; i < (self.isMoveIng ? preLoadViewCount+1:preLoadViewCount); i++)
-        {
+        for (NSInteger i = self.cards.count; i < (self.isMoveIng ? preLoadViewCount+1:preLoadViewCount); i++){
             YFLDragCardView *cardView = [self.dataSource container:self viewForRowsAtIndex:self.loadedIndex];
             cardView.frame = CGRectMake(self.configure.containerEdge, self.configure.containerEdge, self.frame.size.width-2*self.configure.containerEdge, self.frame.size.height-2*(self.configure.containerEdge+self.configure.cardEdge));
             [cardView setConfigure:self.configure];
@@ -107,7 +105,6 @@
 {
     //动画时允许用户交流，比如触摸 | 时间曲线函数，缓入缓出，中间快
     [UIView animateWithDuration:0.5f delay:0.0f usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveEaseInOut animations:^{
-        
         if ([self.delegate respondsToSelector:@selector(container:dargingForCardView:direction:widthRate:heightRate:)]) {
             [self.delegate container:self dargingForCardView:self.cards.firstObject direction:self.direction widthRate:0 heightRate:0];
         }
@@ -142,13 +139,10 @@
                 default:
                     break;
             }
-            
             cardView.originTransForm = cardView.transform;
-
         }
         
     } completion:^(BOOL finished) {
-        
         BOOL isEmpty = self.cards.count == 0 ? YES : NO;
         if (self.delegate && [self.delegate respondsToSelector:@selector(container:dataSourceIsEmpty:)]) {
             [self.delegate container:self dataSourceIsEmpty:isEmpty];
@@ -161,11 +155,8 @@
 - (void)recordFrame:(YFLDragCardView *)cardView
 {
     if (self.loadedIndex >= 3){
-        
         cardView.frame = self.lastCardFrame;
-        
     }else{
-        
         CGRect frame = cardView.frame;
         if (CGRectIsEmpty(self.firstCardFrame)){
             self.firstCardFrame = frame;
@@ -178,21 +169,16 @@
 {
     //如果正在移动，添加第四个
     if (!self.isMoveIng) {
-        
         self.isMoveIng = YES;
         [self addSubViews];
-        
     }else{
-        
         //第四个加载完，立马改变没作用在手势上其他cardview的scale
         scale = fabsf(scale) >= boundaryRation ? boundaryRation : fabsf(scale);
         CGFloat transFormtxPoor = (secondCardScale-thirdCardScale)/(boundaryRation/scale);
         CGFloat frameYPoor = self.configure.cardEdge/(boundaryRation/scale); // frame y差值
         
         for (int index = 1; index < self.cards.count ; index++) {
-           
             YFLDragCardView *cardView = (YFLDragCardView *)self.cards[index];
-            
             switch (index) {
                 case 1:
                 {
@@ -231,10 +217,8 @@
 - (void)panGesturemMoveFinishOrCancle:(YFLDragCardView*)cardView direction:(ContainerDragDirection)direction scale:(float)scale isDisappear:(BOOL)isDisappear
 {
     if (!isDisappear) {
-        
         //干掉多创建的第四个.重置标量
         if (self.isMoveIng && self.cards.count > self.configure.visableCount) {
-            
             YFLDragCardView *lastView = (YFLDragCardView *)self.cards.lastObject;
             [lastView removeFromSuperview];
             [self.cards removeObject:lastView];
@@ -243,31 +227,18 @@
         self.isMoveIng = NO;
         [self resetLayoutSubviews];
     }else{
-        
-        
         if ([self.delegate respondsToSelector:@selector(container:dragDidFinshForDirection:forCardView:)]) {
-            
             [self.delegate container:self dragDidFinshForDirection:self.direction forCardView:cardView];
-            
         }
-        
         NSInteger flag = (direction == ContainerDragLeft?-1:2);
-        
         [UIView animateWithDuration:0.5f delay:0.0f options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction animations:^{
-            
             cardView.center = CGPointMake(flag*ScreenWidth, flag*ScreenWidth/scale+self.cardCenter.y);
-            
         } completion:^(BOOL finished) {
-            
             [cardView removeFromSuperview];
-            
         }];
-        
         [self.cards removeObject:cardView];
         self.isMoveIng = NO;
         [self resetLayoutSubviews];
-
-        
     }
     
 }//手势结束
@@ -276,15 +247,10 @@
 - (void)reloadData
 {
     if (self.dataSource && [self.dataSource respondsToSelector:@selector(numberOfRowsInYFLDragCardContainer:)] && [self.dataSource respondsToSelector:@selector(container:viewForRowsAtIndex:)]) {
-        
         [self resetInitData];
-        
         [self addSubViews];
-
         [self resetLayoutSubviews];
-        
     }else{
-        
         NSAssert(self.dataSource, @"check dataSource and dataSource Methods!");
     }
     
@@ -339,7 +305,6 @@
 
     //卡片滑动结束的代理(可用户发送数据请求)
     if ([self.delegate respondsToSelector:@selector(container:dragDidFinshForDirection:forCardView:)]) {
-        
         [self.delegate container:self dragDidFinshForDirection:direction forCardView:currentShowCardView];
     }
     
@@ -349,8 +314,7 @@
 #pragma mark - Action Methods
 - (void)handleTapGesture:(UITapGestureRecognizer*)tap
 {
-    if ([self.delegate respondsToSelector:@selector(container:didSelectRowAtIndex:)])
-    {
+    if ([self.delegate respondsToSelector:@selector(container:didSelectRowAtIndex:)]){
         [self.delegate container:self didSelectRowAtIndex:tap.view.tag];
     }
     
@@ -364,7 +328,6 @@
     }
     
     if (canEdit) {
-        
         if (pan.state == UIGestureRecognizerStateBegan){
             // TO DO
         }else if (pan.state == UIGestureRecognizerStateChanged){
@@ -396,7 +359,6 @@
                 self.direction = ContainerDragDefaults;
             }
 
-           
             [self.delegate container:self dargingForCardView:cardView direction:self.direction widthRate:horizionSliderRate heightRate:verticalSliderRate];
             }
         }else if (pan.state == UIGestureRecognizerStateEnded || pan.state == UIGestureRecognizerStateEnded){
@@ -406,10 +368,7 @@
             float moveX = (pan.view.center.x-self.cardCenter.x);
             [self panGesturemMoveFinishOrCancle:(YFLDragCardView*)pan.view direction:self.direction scale:moveX/moveY isDisappear:fabs(horizionSliderRate)>boundaryRation];
 
-     
-     
         }
-        
     }
 }
 
